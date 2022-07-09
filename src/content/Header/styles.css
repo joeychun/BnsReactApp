@@ -1,0 +1,36 @@
+.Header {
+    padding: 1rem 0.5rem;
+}
+
+.Span {
+    cursor: pointer;
+}
+
+.MenuContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Span h5 {
+    font-size: 1.25rem;
+    margin-top: -0.45rem;
+    padding: 0 1.56rem 0 0;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+}
+
+.MenuItem {
+    display: inline-block;
+    text-align: center;
+
+    font-size: 1rem;
+    color: #000000;
+    transition: color 0.2s ease-in;
+    margin: 0.25rem 2rem;
+    padding: 40px 0 20px 0;
+}

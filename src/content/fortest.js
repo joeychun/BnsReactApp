@@ -1,5 +1,7 @@
 import React from 'react';
 import TopMenu from './menu';
+import Menu from './Header/menu';
+import SemiMenu from './Header/semiMenu';
 import InfoList from './info';
 import { Header, Button, Icon, List } from 'semantic-ui-react'
 
@@ -8,7 +10,7 @@ const ForTest = (props) => {
         <div>
             {props.show &&
             <div>
-                <TopMenu />
+                <Menu />
                 <Header as="h1">For Semantic Test!</Header>
                 <br></br>
                 <Button basic color="brown">Click!</Button>
