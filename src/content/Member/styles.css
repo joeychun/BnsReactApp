@@ -1,0 +1,57 @@
+
+/* ANTD css */
+
+.ant-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ant-col {
+    padding-right: 100%;
+    margin-right: 55px;
+}
+
+.ant-card {
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: "tnum";
+}
+
+.ant-card-hoverable {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px #000000;
+    transition: all 300ms ease-out;
+}
+
+.ant-card-hoverable:hover {
+    box-shadow: 0px 3px 8px;
+}
+
+.ant-card-cover>* {
+    display: block;
+    width: 100%;
+}
+
+.ant-card-meta-title {
+    overflow: hidden;
+    color: rgba(0,0,0,.85);
+    font-weight: 500.3;
+    font-size: 16px;
+    font-family: Ubuntu, sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-left: 8%;
+    
+}
+
+.ant-card-meta-description {
+    color: #00000073;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 6%;
+}
