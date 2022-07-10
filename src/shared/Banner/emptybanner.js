@@ -1,9 +1,9 @@
 import React from 'react';
 import Banner from './banner';
 
-const EmptyBanner = () => {
+const EmptyBanner = ({ bgColor }) => {
     return (
-        <Banner noDivider={true} bgColor={"#ffffff"} heading={""} textBodies={[]} 
+        <Banner noDivider={true} bgColor={bgColor} heading={""} textBodies={[]}
             img={""} bgImg={""} maxWidth={"100%"} />
     )
 }
