@@ -2,8 +2,10 @@ import React from 'react';
 import TopMenu from './menu';
 import Menu from './Header/menu';
 import SemiMenu from './Header/semiMenu';
+import HomeBanner from './HomeBanners/homebanner';
 import InfoList from './info';
 import { Header, Button, Icon, List } from 'semantic-ui-react'
+
 
 const ForTest = (props) => {
     return (
@@ -11,7 +13,8 @@ const ForTest = (props) => {
             {props.show &&
             <div>
                 <Menu />
-                <Header as="h1">For Semantic Test!</Header>
+                <HomeBanner />
+                {/* <Header as="h1">For Semantic Test!</Header>
                 <br></br>
                 <Button basic color="brown">Click!</Button>
 
@@ -22,7 +25,7 @@ const ForTest = (props) => {
                             YouTube
                         </Button>
                     </Button>
-                </form>
+                </form> */}
 
                 <br></br>
                 <div align="left"><InfoList /></div>
