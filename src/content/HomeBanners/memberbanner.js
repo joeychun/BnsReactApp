@@ -15,7 +15,7 @@ const cssSettings = {
 
 const MemberBanner = () => {
     return (
-        <Banner empty={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]} 
+        <Banner noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]} 
             img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
     )
 }

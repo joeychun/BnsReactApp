@@ -3,7 +3,7 @@ import Banner from './banner';
 
 const EmptyBanner = () => {
     return (
-        <Banner empty={true} bgColor={"#ffffff"} heading={""} textBodies={[]} 
+        <Banner noDivider={true} bgColor={"#ffffff"} heading={""} textBodies={[]} 
             img={""} bgImg={""} maxWidth={"100%"} />
     )
 }
