@@ -7,7 +7,7 @@ import InfoList from './info';
 import { Header, Button, Icon, List } from 'semantic-ui-react'
 
 
-const ForTest = (props) => {
+const Home = (props) => {
     return (
         <div>
             {props.show &&
@@ -35,4 +35,4 @@ const ForTest = (props) => {
     )
 }
 
-export default ForTest;
+export default Home;
