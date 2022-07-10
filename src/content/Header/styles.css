@@ -24,6 +24,15 @@
     font-weight: 500;
 }
 
+.Span h5:hover {
+    font-size: 1.25rem;
+    margin-top: -0.45rem;
+    padding: 0 1.56rem 0 0;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    color: rgb(11, 114, 169);
+}
+
 .MenuItem {
     display: inline-block;
     text-align: center;

@@ -29,14 +29,13 @@ const SemiMenu = () => {
         <Fragment>
             <div className="MenuItem" onClick={() => redirectTo("/")}>
                 <div className="Span">
-                    <div style={{display: "flex", paddingTop: 20, paddingRight: 50, paddingLeft: 10}} >
-                    <Link to="/" aria-label="homepage">
-                        <img alt="BNS logo" src="/img/bnslogo.jpeg" width="20%" height="60%"/>
-                    </Link></div>
+                    <Link style={{display: "flex", paddingTop: 20, paddingRight: 50, paddingLeft: 10}} to="/" aria-label="homepage">
+                        <img alt="BNS logo" src="/img/bnslogo.jpeg" width="20%" height="40%"/>
+                    </Link>
                 </div>
             </div>
-            <div className="MenuItem" onClick={() => redirectTo("/about")}>
-                <div className="Span"><h5>About</h5></div>
+            <div className="MenuItem" onClick={() => redirectTo("/members")}>
+                <div className="Span"><h5>Members</h5></div>
             </div>
             <div className="MenuItem" onClick={() => redirectTo("/articles")}>
                 <div className="Span"><h5>Articles</h5></div>
