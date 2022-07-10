@@ -1,5 +1,8 @@
 import React from 'react';
 import Banner from '../../shared/Banner/banner';
+import MemberContainer from '../Member/memberContainer';
+import MembersRow from '../Member/membersRow';
+import Box from '@mui/material/Box';
 
 const content = {
     heading: "Members",
@@ -13,10 +16,28 @@ const cssSettings = {
     maxWidth: "80%",
 }
 
+// To test out membersRow.js
+const infoList = [
+    {
+        name: "Junseo Lee",
+        picture: "junseo.png",
+        description: "asdf!",
+    },
+    {
+        name: "Junseo Lee",
+        picture: "junseo.png",
+        description: "fdass!",
+    },
+
+]
+
 const MemberBanner = () => {
     return (
-        <Banner noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]} 
-            img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
+        <Box>
+            <Banner noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}
+                img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
+            <MembersRow infoList={infoList} />
+        </Box>
     )
 }
 
