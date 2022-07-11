@@ -1,11 +1,17 @@
 import React from 'react';
 import './banner.css'
 
-const Banner = ({ bannerId, noDivider, heading, textBodies, img, bgImg, bgColor, maxWidth }) => {
+const Banner = ({ bannerId, noDivider, heading, textBodies, img, bgImg, bgColor, maxWidth, topPadding, bottomPadding }) => {
     const body = textBodies.map((text, ind) => <div key={ind} className="Body"><p>{text}</p></div>);
-    console.log('ID is ' + bannerId);
+
+    const topPaddingValue = topPadding === undefined ?
+        90 : topPadding
+    const bottomPaddingValue = bottomPadding === undefined ?
+        60 : bottomPadding
+
     return (
-        <div id={bannerId === "" ? "section" : `section ${bannerId}`} style={{ backgroundColor: bgColor }} className="Section">
+        <div id={bannerId === "" ? "section" : `section ${bannerId}`}
+            style={{ backgroundColor: bgColor, paddingTop: topPaddingValue, paddingBottom: bottomPaddingValue }} className="Section">
             {noDivider ?
                 <div className="Container">
                     <div style={{ maxWidth: maxWidth }} className="InfoCol">
