@@ -11,25 +11,13 @@ const Home = (props) => {
     return (
         <div>
             {props.show &&
-            <div>
-                <Menu />
-                <HomeBanner />
-                {/* <Header as="h1">For Semantic Test!</Header>
-                <br></br>
-                <Button basic color="brown">Click!</Button>
+                <div>
+                    <Menu />
+                    <HomeBanner />
 
-                <form>
-                    <Button as='div' labelPosition='right'>
-                        <Button color='red' formaction="https://www.youtube.com/channel/UCFQ8WlLN-ye9VLUEsDJOzjA">
-                            <Icon name='youtube' />
-                            YouTube
-                        </Button>
-                    </Button>
-                </form> */}
-
-                <br></br>
-                <div align="left"><InfoList /></div>
-            </div>
+                    <br></br>
+                    <div align="left"><InfoList /></div>
+                </div>
             }
         </div>
     )
