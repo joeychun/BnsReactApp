@@ -3,6 +3,8 @@ import Banner from '../../shared/Banner/banner';
 import MemberContainer from '../Member/memberContainer';
 import MembersRow from '../Member/membersRow';
 import Box from '@mui/material/Box';
+import MembersContent from '../Member/membersContent';
+import EmptyBanner from '../../shared/Banner/emptybanner';
 
 const content = {
     heading: "Members",
@@ -54,8 +56,11 @@ const MemberBanner = () => {
         <Box>
             <Banner bannerId="memberBanner" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
-            <MembersRow infoList={infoList2} />
-            <MembersRow infoList={infoList1} />
+            {/* <MembersRow infoList={infoList2} /> */}
+            {/* <MembersRow infoList={infoList1} /> */}
+            <EmptyBanner bgColor="#43537b" topPadding={10} />
+            <EmptyBanner bgColor="#ffffff" topPadding={0} bottomPadding={0} />
+            <MembersContent />
         </Box>
     )
 }

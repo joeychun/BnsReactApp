@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../../shared/Banner/banner';
+import EmptyBanner from '../../shared/Banner/emptybanner';
 
 const content = {
     heading: "About Us",
@@ -17,8 +18,11 @@ const cssSettings = {
 
 const AboutBanner = () => {
     return (
-        <Banner bannerId="" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={content.textBodies}
-            img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
+        <div>
+            <Banner bannerId="" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={content.textBodies}
+                img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
+            <EmptyBanner bgColor="#364261" />
+        </div>
     )
 }
 
