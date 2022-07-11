@@ -4,7 +4,7 @@ import EmptyContainer from './emptyContainer';
 import './styles.css'
 
 const MemberContainer = ({ name, picture, description }) => {
-    const srcLink = `img/${picture}`;
+    const srcLink = `img/Members/${picture}`;
     console.log(srcLink);
     return (
         <div>
@@ -13,7 +13,7 @@ const MemberContainer = ({ name, picture, description }) => {
                     flexDirection='row'
                     hoverable
                     style={{
-                        width: 240, height: 330
+                        width: 400, height: 550
                     }}
                     cover={<img alt={name} src={srcLink} />}
                 >

@@ -27,9 +27,9 @@ const SemiMenu = () => {
 
     return (
         <Fragment>
-            <div className="MenuItem" onClick={() => redirectTo("/")}>
+            <div className="MenuItem" style={{ paddingTop: 10 }} onClick={() => redirectTo("/")}>
                 <div className="Span">
-                    <Link style={{ display: "flex", paddingTop: 20, paddingRight: 50, paddingLeft: 10 }} to="/" aria-label="homepage">
+                    <Link style={{ display: "flex", paddingRight: 50, paddingLeft: 10 }} to="/" aria-label="homepage">
                         <img alt="BNS logo" src="/img/bnslogo.jpeg" width="20%" height="40%" />
                     </Link>
                 </div>

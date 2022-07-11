@@ -10,7 +10,7 @@
 
 .ant-col {
     padding-right: 100%;
-    margin-right: 55px;
+    margin-right: 0px;
 }
 
 .ant-card {
@@ -40,20 +40,20 @@
     overflow: hidden;
     color: rgba(0,0,0,.85);
     font-weight: 500.3;
-    font-size: 16px;
+    font-size: 30px;
     font-family: Ubuntu, sans-serif;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: left;
     margin-top: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     margin-left: 8%;
     
 }
 
 .ant-card-meta-description {
     color: #00000073;
-    font-size: 14px;
+    font-size: 27px;
     text-align: left;
-    margin-left: 6%;
+    margin-left: 8%;
 }

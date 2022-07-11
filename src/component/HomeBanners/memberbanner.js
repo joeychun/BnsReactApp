@@ -21,12 +21,12 @@ const infoList1 = [
     {
         name: "Junseo Lee",
         picture: "junseo.png",
-        description: "asdf!",
+        description: "Writer",
     },
     {
         name: "Junseo Lee",
         picture: "junseo.png",
-        description: "fdass!",
+        description: "Writer",
     },
 
 ]
@@ -34,18 +34,18 @@ const infoList1 = [
 const infoList2 = [
     {
         name: "Junseo Lee",
-        picture: "junseo.png",
-        description: "ym!",
+        picture: "Junseo.png",
+        description: "Writer",
     },
     {
         name: "Junseo Lee",
-        picture: "junseo.png",
-        description: "my!",
+        picture: "Junseo.png",
+        description: "Writer",
     },
     {
         name: "Junseo Lee",
-        picture: "junseo.png",
-        description: "lol",
+        picture: "Junseo.png",
+        description: "Writer",
     },
 ]
 
@@ -54,8 +54,8 @@ const MemberBanner = () => {
         <Box>
             <Banner bannerId="memberBanner" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
-            <MembersRow infoList={infoList1} />
             <MembersRow infoList={infoList2} />
+            <MembersRow infoList={infoList1} />
         </Box>
     )
 }
