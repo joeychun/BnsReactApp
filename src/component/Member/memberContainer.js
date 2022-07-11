@@ -5,7 +5,6 @@ import './styles.css'
 
 const MemberContainer = ({ name, picture, description }) => {
     const srcLink = `img/Members/${picture}`;
-    console.log(srcLink);
     return (
         <div>
             { (name || picture || description) ?

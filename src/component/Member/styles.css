@@ -3,14 +3,15 @@
 
 .ant-row {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    justify-content: center;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .ant-col {
     padding-right: 100%;
-    margin-right: 0px;
+    margin-right: 50px;
 }
 
 .ant-card {
@@ -29,6 +30,11 @@
 
 .ant-card-hoverable:hover {
     box-shadow: 0px 3px 8px;
+}
+
+.ant-card-cover img {
+    width: 400px;
+    height: 400px;
 }
 
 .ant-card-cover>* {
