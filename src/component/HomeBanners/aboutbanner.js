@@ -21,7 +21,7 @@ const AboutBanner = () => {
         <div>
             <Banner bannerId="" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={content.textBodies}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
-            <EmptyBanner bgColor="#364261" />
+            <EmptyBanner bgColor={cssSettings.bgColor} />
         </div>
     )
 }

@@ -18,47 +18,12 @@ const cssSettings = {
     maxWidth: "80%",
 }
 
-// To test out membersRow.js
-const infoList1 = [
-    {
-        name: "Junseo Lee",
-        picture: "junseo.png",
-        description: "Writer",
-    },
-    {
-        name: "Junseo Lee",
-        picture: "junseo.png",
-        description: "Writer",
-    },
-
-]
-
-const infoList2 = [
-    {
-        name: "Junseo Lee",
-        picture: "Junseo.png",
-        description: "Writer",
-    },
-    {
-        name: "Junseo Lee",
-        picture: "Junseo.png",
-        description: "Writer",
-    },
-    {
-        name: "Junseo Lee",
-        picture: "Junseo.png",
-        description: "Writer",
-    },
-]
-
 const MemberBanner = () => {
     return (
         <Box>
             <Banner bannerId="memberBanner" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
-            {/* <MembersRow infoList={infoList2} /> */}
-            {/* <MembersRow infoList={infoList1} /> */}
-            <EmptyBanner bgColor="#43537b" topPadding={10} />
+            <EmptyBanner bgColor={cssSettings.bgColor} topPadding={10} />
             <EmptyBanner bgColor="#ffffff" topPadding={0} bottomPadding={0} />
             <MembersContent />
         </Box>
