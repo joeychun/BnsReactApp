@@ -17,7 +17,7 @@ const cssSettings = {
 }
 
 // To test out membersRow.js
-const infoList = [
+const infoList1 = [
     {
         name: "Junseo Lee",
         picture: "junseo.png",
@@ -31,12 +31,31 @@ const infoList = [
 
 ]
 
+const infoList2 = [
+    {
+        name: "Junseo Lee",
+        picture: "junseo.png",
+        description: "ym!",
+    },
+    {
+        name: "Junseo Lee",
+        picture: "junseo.png",
+        description: "my!",
+    },
+    {
+        name: "Junseo Lee",
+        picture: "junseo.png",
+        description: "lol",
+    },
+]
+
 const MemberBanner = () => {
     return (
         <Box>
             <Banner bannerId="memberBanner" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
-            <MembersRow infoList={infoList} />
+            <MembersRow infoList={infoList1} />
+            <MembersRow infoList={infoList2} />
         </Box>
     )
 }
