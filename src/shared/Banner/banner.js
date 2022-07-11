@@ -1,10 +1,11 @@
 import React from 'react';
 import './banner.css'
 
-const Banner = ({ noDivider, heading, textBodies, img, bgImg, bgColor, maxWidth }) => {
-    const body = textBodies.map((text) => <div className="Body"><p>{text}</p></div>);
+const Banner = ({ bannerId, noDivider, heading, textBodies, img, bgImg, bgColor, maxWidth }) => {
+    const body = textBodies.map((text, ind) => <div key={ind} className="Body"><p>{text}</p></div>);
+    console.log('ID is ' + bannerId);
     return (
-        <div id="section" style={{ backgroundColor: bgColor }} className="Section">
+        <div id={bannerId === "" ? "section" : `section ${bannerId}`} style={{ backgroundColor: bgColor }} className="Section">
             {noDivider ?
                 <div className="Container">
                     <div style={{ maxWidth: maxWidth }} className="InfoCol">
@@ -30,7 +31,8 @@ const Banner = ({ noDivider, heading, textBodies, img, bgImg, bgColor, maxWidth 
                             <img src={img}></img>
                         </div>
                     </div>
-                </div>}
+                </div>
+            }
         </div>
     )
 }

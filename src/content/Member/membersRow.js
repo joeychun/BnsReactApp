@@ -31,9 +31,9 @@ const MembersRow = ({ infoList }) => {
         formattedList.push({ name: "", picture: "", description: "" })
     }
 
-    const containers = formattedList.map((member) => {
+    const containers = formattedList.map((member, ind) => {
         return (
-            <Col className="gutter-row" span={8}><MemberContainer name={member.name} picture={member.picture} description={member.description} /></Col>
+            <Col key={ind} className="gutter-row" span={8}><MemberContainer name={member.name} picture={member.picture} description={member.description} /></Col>
         );
     })
 

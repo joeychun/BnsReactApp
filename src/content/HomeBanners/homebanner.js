@@ -8,8 +8,8 @@ const HomeBanner = () => {
     return (
         <div>
             <AboutBanner />
-            <EmptyBanner bgColor="#364261"/>
-            <MemberBanner/>
+            <EmptyBanner bgColor="#364261" />
+            <MemberBanner />
         </div>
     )
 }

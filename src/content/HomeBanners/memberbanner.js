@@ -34,7 +34,7 @@ const infoList = [
 const MemberBanner = () => {
     return (
         <Box>
-            <Banner noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}
+            <Banner bannerId="memberBanner" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
             <MembersRow infoList={infoList} />
         </Box>
