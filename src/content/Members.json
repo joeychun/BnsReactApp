@@ -1,0 +1,127 @@
+[
+    {
+        "name": "Junseo Lee",
+        "picture": "Junseo.png",
+        "description": "Founder & Editor In Chief"
+    },
+    {
+        "name": "Steven Kim",
+        "picture": "Steven.jpeg",
+        "description": "Founder & Chief Video Productions"
+    },
+    {
+        "name": "Kris Son",
+        "picture": "Kris.jpeg",
+        "description": "Founder & Chief Public Relations"
+    },
+    {
+        "name": "Ian Park",
+        "picture": "Ian.jpeg",
+        "description": "Secretary"
+    },
+    {
+        "name": "Jeffrey You",
+        "picture": "NA.jpeg",
+        "description": "Writing Editor"
+    },
+    {
+        "name": "Andrew Shin",
+        "picture": "Minsik.jpeg",
+        "description": "Webmaster"
+    },
+    {
+        "name": "Joseph Chun",
+        "picture": "NA.jpeg",
+        "description": "Webmaster"
+    },
+    {
+        "name": "Eddie Chu",
+        "picture": "Eddie.png",
+        "description": "Chief Public Relations"
+    },
+    {
+        "name": "Jason Baek",
+        "picture": "NA.jpeg",
+        "description": "Chief Video Productions"
+    },
+    {
+        "name": "Alex Nam",
+        "picture": "NA.jpeg",
+        "description": "Video"
+    },
+    {
+        "name": "Hyeonhong Chang",
+        "picture": "NA.jpeg",
+        "description": "Video"
+    },
+    {
+        "name": "Jaewon Kim",
+        "picture": "NA.jpeg",
+        "description": "Video"
+    },
+    {
+        "name": "Jin Kim",
+        "picture": "NA.jpeg",
+        "description": "Video"
+    },
+    {
+        "name": "Slyvia Lee",
+        "picture": "NA.jpeg",
+        "description": "Video"
+    },
+    {
+        "name": "Yoonwoo Lee",
+        "picture": "NA.jpeg",
+        "description": "Video"
+    },
+    {
+        "name": "Jinmin Lee",
+        "picture": "Jinmin.png",
+        "description": "Writer"
+    },
+    {
+        "name": "Jiyu Hong",
+        "picture": "NA.jpeg",
+        "description": "Writer"
+    },
+    {
+        "name": "Chloe Yoon",
+        "picture": "NA.jpeg",
+        "description": "Writer"
+    },
+    {
+        "name": "Jenny Park",
+        "picture": "NA.jpeg",
+        "description": "Writer"
+    },
+    {
+        "name": "Jian Hong",
+        "picture": "NA.jpeg",
+        "description": "Writer"
+    },
+    {
+        "name": "Joon Ho Kim",
+        "picture": "NA.jpeg",
+        "description": "Writer"
+    },
+    {
+        "name": "Kate Kim",
+        "picture": "NA.jpeg",
+        "description": "Writer"
+    },
+    {
+        "name": "Sean Kim",
+        "picture": "NA.jpeg",
+        "description": "Writer"
+    },
+    {
+        "name": "Yeonjae Kim",
+        "picture": "NA.jpeg",
+        "description": "Writer"
+    },
+    {
+        "name": "Gyusung Lee",
+        "picture": "NA.jpeg",
+        "description": "Public RElations"
+    }
+]
