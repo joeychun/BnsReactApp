@@ -1,125 +1,150 @@
 [
     {
+        "id": 1,
         "name": "Junseo Lee",
         "picture": "Junseo.png",
         "description": "Founder & Editor In Chief"
     },
     {
+        "id": 2,
         "name": "Steven Kim",
         "picture": "Steven.jpeg",
         "description": "Founder & Chief Video Productions"
     },
     {
+        "id": 3,
         "name": "Kris Son",
         "picture": "Kris.jpeg",
         "description": "Founder & Chief Public Relations"
     },
     {
+        "id": 4,
         "name": "Ian Park",
         "picture": "Ian.jpeg",
         "description": "Secretary"
     },
     {
+        "id": 5,
         "name": "Jeffrey You",
         "picture": "NA.jpeg",
         "description": "Writing Editor"
     },
     {
+        "id": 6,
         "name": "Andrew Shin",
         "picture": "Minsik.jpeg",
         "description": "Webmaster"
     },
     {
+        "id": 7,
         "name": "Joseph Chun",
         "picture": "NA.jpeg",
         "description": "Webmaster"
     },
     {
+        "id": 8,
         "name": "Eddie Chu",
         "picture": "Eddie.png",
         "description": "Chief Public Relations"
     },
     {
+        "id": 9,
         "name": "Jason Baek",
         "picture": "NA.jpeg",
         "description": "Chief Video Productions"
     },
     {
+        "id": 10,
         "name": "Alex Nam",
         "picture": "NA.jpeg",
         "description": "Video"
     },
     {
+        "id": 11,
         "name": "Hyeonhong Chang",
         "picture": "NA.jpeg",
         "description": "Video"
     },
     {
+        "id": 12,
         "name": "Jaewon Kim",
         "picture": "NA.jpeg",
         "description": "Video"
     },
     {
+        "id": 13,
         "name": "Jin Kim",
         "picture": "NA.jpeg",
         "description": "Video"
     },
     {
+        "id": 14,
         "name": "Slyvia Lee",
         "picture": "NA.jpeg",
         "description": "Video"
     },
     {
+        "id": 15,
         "name": "Yoonwoo Lee",
         "picture": "NA.jpeg",
         "description": "Video"
     },
     {
+        "id": 16,
         "name": "Jinmin Lee",
         "picture": "Jinmin.png",
         "description": "Writer"
     },
     {
+        "id": 17,
         "name": "Jiyu Hong",
         "picture": "NA.jpeg",
         "description": "Writer"
     },
     {
+        "id": 18,
         "name": "Chloe Yoon",
         "picture": "NA.jpeg",
         "description": "Writer"
     },
     {
+        "id": 19,
         "name": "Jenny Park",
         "picture": "NA.jpeg",
         "description": "Writer"
     },
     {
+        "id": 20,
         "name": "Jian Hong",
         "picture": "NA.jpeg",
         "description": "Writer"
     },
     {
+        "id": 21,
         "name": "Joon Ho Kim",
         "picture": "NA.jpeg",
         "description": "Writer"
     },
     {
+        "id": 22,
         "name": "Kate Kim",
         "picture": "NA.jpeg",
         "description": "Writer"
     },
     {
+        "id": 23,
         "name": "Sean Kim",
         "picture": "NA.jpeg",
         "description": "Writer"
     },
     {
+        "id": 24,
         "name": "Yeonjae Kim",
         "picture": "NA.jpeg",
         "description": "Writer"
     },
     {
+        "id": 25,
         "name": "Gyusung Lee",
         "picture": "NA.jpeg",
         "description": "Public Relations"
