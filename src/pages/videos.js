@@ -2,17 +2,14 @@ import React from 'react';
 import Menu from '../component/Header/menu';
 import FooterBar from '../component/Footer/footerbar';
 import VideoBanner from '../component/VideoBanners/videobanners';
+import { Flex } from 'rebass/styled-components';
 
 
 const Videos = () => {
     return (
-        <div>
-            <Menu />
+        <Flex width={1} flexDirection='column'>
             <VideoBanner />
-
-            {/* <br></br>
-            <div align="left"><InfoList /></div> */}
-        </div>
+        </Flex>
     )
 }
 

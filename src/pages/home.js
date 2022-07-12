@@ -10,12 +10,7 @@ import { Flex } from 'rebass/styled-components';
 const Home = () => {
     return (
         <Flex width={1} flexDirection='column'>
-            <Menu />
             <HomeBanner />
-
-            {/* <br></br>
-            <div align="left"><InfoList /></div> */}
-            <FooterBar />
         </Flex>
     )
 }

@@ -9,11 +9,7 @@ import { Flex } from 'rebass/styled-components';
 const Articles = () => {
     return (
         <Flex width={1} flexDirection='column'>
-            <Menu />
             <SneakpeaksBanner />
-
-            {/* <br></br>
-            <div align="left"><InfoList /></div> */}
         </Flex>
     )
 }
