@@ -24,7 +24,7 @@ const SneakpeaksBanner = () => {
     const allTextFiles = TxtReader();
 
     const allSneaks = Articles.map(({ id, title, authorId, filename, date }) => {
-        let parsedFilename = filename.replace('.txt', ''); parsedFilename = parsedFilename.replace('.json', ''); // In case file format is added
+        const parsedFilename = filename.replace('.txt', '').replace('.json', ''); // In case file format is added
         return <SneakPeak key={id} articleId={id} title={title} authorId={authorId}
             txt={allTextFiles[parsedFilename].text} date={date} />;
     })
