@@ -8,6 +8,13 @@
     },
     {
         "id": 2,
+        "title": "Cryptocurrency: A Money Trap",
+        "authorId": 7,
+        "filename": "cryptocurrency_money_trap.json",
+        "date": "June 29, 2022"
+    },
+    {
+        "id": 3,
         "title": "The Life of a Salesman",
         "authorId": 16,
         "filename": "life_of_a_salesman.json",
