@@ -1,25 +1,22 @@
 import React from 'react';
-import TopMenu from './menu';
+import FooterBar from '../component/Footer/footerbar';
 import Menu from '../component/Header/menu';
-import SemiMenu from '../component/Header/semiMenu';
 import HomeBanner from '../component/HomeBanners/homebanner';
 import InfoList from '../component/info';
-import { Header, Button, Icon, List } from 'semantic-ui-react'
+import Box from '@mui/material/Box';
+import { Flex } from 'rebass/styled-components';
 
 
 const Home = () => {
     return (
-        <div>
+        <Flex width={1} flexDirection='column'>
+            <Menu />
+            <HomeBanner />
 
-            <div>
-                <Menu />
-                <HomeBanner />
-
-                <br></br>
-                <div align="left"><InfoList /></div>
-            </div>
-
-        </div>
+            {/* <br></br>
+            <div align="left"><InfoList /></div> */}
+            <FooterBar />
+        </Flex>
     )
 }
 
