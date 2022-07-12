@@ -5,6 +5,7 @@ import TxtReader from '../../../shared/TxtReader/txtreader';
 import Box from '@mui/material/Box';
 import './oneArticle.css';
 import { Col, Row } from 'antd';
+import { Footer } from 'antd/lib/layout/layout';
 
 const OneArticle = ({ id }) => {
     const { title, authorId, filename, date } = SearchArticle(id);
