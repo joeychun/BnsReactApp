@@ -23,7 +23,7 @@ const MembersContent = () => {
 
     const AllMemberContainers = MembersInThree.map((threeMemList, ind) => {
         return (
-            <MembersRow key={ind} infoList={threeMemList} />
+            <MembersRow width={0.9} key={ind} infoList={threeMemList} />
         );
     })
     return (

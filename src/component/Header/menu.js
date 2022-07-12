@@ -6,13 +6,13 @@ import './styles.css';
 
 const Menu = () => {
   return (
-    <div className="Header">
-        <div className="MenuContainer">
-            <Row type="flex" justify="space-between" gutter={20} id="header">
-                <SemiMenu />
-            </Row>
-        </div>
-    </div>
+    <header className="Header">
+      <div className="MenuContainer">
+        <Row type="flex" justify="space-between" gutter={20} id="header">
+          <SemiMenu />
+        </Row>
+      </div>
+    </header>
   );
 }
 

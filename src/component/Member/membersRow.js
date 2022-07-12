@@ -38,7 +38,7 @@ const MembersRow = ({ infoList }) => {
     })
 
     return (
-        <Row justify="center" gutter={24}>
+        <Row align='middle' justify='start' gutter={24}>
             {containers}
         </Row>
     );

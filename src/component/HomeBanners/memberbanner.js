@@ -5,6 +5,7 @@ import MembersRow from '../Member/membersRow';
 import Box from '@mui/material/Box';
 import MembersContent from '../Member/membersContent';
 import EmptyBanner from '../../shared/Banner/emptybanner';
+import { Flex } from 'rebass/styled-components';
 
 const content = {
     heading: "Members",
@@ -23,7 +24,7 @@ const MemberBanner = () => {
         <Box>
             <Banner bannerId="memberBanner" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
-            <EmptyBanner bgColor={cssSettings.bgColor} topPadding={10} />
+            {/* <EmptyBanner bgColor={cssSettings.bgColor} topPadding={10} /> */}
             <EmptyBanner bgColor="#ffffff" topPadding={0} bottomPadding={0} />
             <MembersContent />
         </Box>
