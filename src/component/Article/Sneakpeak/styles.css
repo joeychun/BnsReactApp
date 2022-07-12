@@ -1,0 +1,41 @@
+.Sneakpeak {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #CDD1D4;
+}
+
+.Sneakpeak h2 {
+    margin-bottom: 20px;
+    max-width: 900px;
+    font-weight: 505;
+    font-size: 30px;
+    line-height: 20px;
+    font-family: Ubuntu, sans-serif;
+    color: #4183c4;
+    text-align: justify;
+    cursor: pointer;
+}
+
+.Sneakpeak h2:hover {
+    color:#33699f;
+}
+
+.Sneakpeak .Blob {
+    max-width: 900px;
+    font-weight: 500;
+    font-size: 20px;
+    color:grey;
+    /* line-height: px; */
+    font-family: Ubuntu, sans-serif;
+    text-align: justify;
+}
+
+.Sneakpeak .Date {
+    font-size: 17px;
+    font-family: Ubuntu, sans-serif;
+    text-align: left;
+}
+
+.SneakpeaksBox {
+    margin-top: 50px;
+}
