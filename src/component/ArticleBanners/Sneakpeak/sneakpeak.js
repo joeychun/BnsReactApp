@@ -28,12 +28,10 @@ const SneakPeak = ({ articleId, title, authorId, txt, date }) => {
                 <Col style={{ width: "15%", borderRight: "1.5px solid #CDD1D4", paddingRight: 0, marginRight: 40 }} span={4}>
                     <p className="Date">{date}</p>
                 </Col>
-                {/* <a href={`/articles/${articleId}`}> */}
                 <Col span={12}>
                     <h2 onClick={() => navigate(`/articles/${articleId}`)}>{title}</h2>
                     <p className="Blob">{sneakText}</p>
                 </Col>
-                {/* </a> */}
             </Row>
         </div>
     )
