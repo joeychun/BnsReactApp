@@ -1,5 +1,5 @@
 import React from 'react';
-import ArticleBanner from '../component/ArticleBanners/articlebanner';
+import SneakpeaksBanner from '../component/Article/Sneakpeak/sneakpeaksBanner';
 import Menu from '../component/Header/menu';
 import FooterBar from '../component/Footer/footerbar';
 import Box from '@mui/material/Box';
@@ -10,7 +10,7 @@ const Articles = () => {
     return (
         <Flex width={1} flexDirection='column'>
             <Menu />
-            <ArticleBanner />
+            <SneakpeaksBanner />
 
             {/* <br></br>
             <div align="left"><InfoList /></div> */}
