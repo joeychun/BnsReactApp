@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './pages/home';
 import Articles from './pages/articles';
+import Article from './pages/article';
 import Videos from './pages/videos';
 
 import { BrowserRouter, Routes, Route, Navigate, Redirect, Switch } from 'react-router-dom';
@@ -12,6 +13,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' exact element={<Home />} />
+          <Route path='/articles/:id' exact element={<Article />} />
           <Route path='/articles' exact element={<Articles />} />
           <Route path='/videos' exact element={<Videos />} />
         </Routes>
