@@ -1,8 +1,16 @@
 [
     {
+        "id": 1,
         "title": "Depression",
         "authorId": 10,
-        "txt": "test.txt",
+        "filename": "depression.json",
         "date": "November 15, 2021"
+    },
+    {
+        "id": 2,
+        "title": "The Life of a Salesman",
+        "authorId": 16,
+        "filename": "life_of_a_salesman.json",
+        "date": "April 2, 2022"
     }
 ]
