@@ -11,7 +11,6 @@ const MembersContent = () => {
         .map(value => ({ value, sort: Math.random() }))
         .sort((a, b) => a.sort - b.sort)
         .map(({ value }) => value)
-    console.log(SortedMembers);
 
     let MembersInThree = [];
     for (let i = 0; i < SortedMembers.length; ++i) {
