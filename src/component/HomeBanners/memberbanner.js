@@ -22,7 +22,7 @@ const cssSettings = {
 const MemberBanner = () => {
     return (
         <Box>
-            <Banner bannerId="memberBanner" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}
+            <Banner bannerId="memberBanner" noDivider={true} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
             {/* <EmptyBanner bgColor={cssSettings.bgColor} topPadding={10} /> */}
             <EmptyBanner bgColor="#ffffff" topPadding={0} bottomPadding={0} />
