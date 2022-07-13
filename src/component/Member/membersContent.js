@@ -1,16 +1,17 @@
 import React from 'react';
 import MembersRow from './membersRow';
 import AllMembers from '../../content/Members.json';
+import NameSorter from '../../shared/SortComparer/nameCmp';
 
 const MembersContent = () => {
     // Alphabetically sorts AllMembers, by name
-    // const SortedMembers = AllMembers.sort((a, b) => a.name.localeCompare(b.name))
+    const SortedMembers = AllMembers.sort((a, b) => NameSorter(a.name, b.name))
 
-    // Randomizes Members 
+    /* Randomizes Members (Unused method, at least for now)
     const SortedMembers = AllMembers
         .map(value => ({ value, sort: Math.random() }))
         .sort((a, b) => a.sort - b.sort)
-        .map(({ value }) => value)
+        .map(({ value }) => value) */
 
     let MembersInThree = [];
     for (let i = 0; i < SortedMembers.length; ++i) {
