@@ -10,7 +10,7 @@
         "id": 2,
         "title": "Cryptocurrency: A Money Trap",
         "authorId": 7,
-        "filename": "cryptocurrency_money_trap.json",
+        "filename": "cryptocurrency_a_money_trap.json",
         "date": "June 29, 2022"
     },
     {
@@ -18,6 +18,13 @@
         "title": "The Life of a Salesman",
         "authorId": 16,
         "filename": "life_of_a_salesman.json",
+        "date": "April 2, 2022"
+    },
+    {
+        "id": 4,
+        "title": "Diamonds: the Product of Physiological Advertisement",
+        "authorId": 25,
+        "filename": "diamonds_the_product_of_physiological_advertisement.json",
         "date": "April 2, 2022"
     }
 ]
