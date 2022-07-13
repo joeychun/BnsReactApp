@@ -1,7 +1,6 @@
 import { Col, Row } from 'antd';
 import React from 'react';
 import { useNavigate } from 'react-router';
-import SearchAuthor from '../../../shared/Searcher/searchAuthor';
 
 import './styles.css';
 
@@ -17,10 +16,9 @@ const stringExcerpt = (str) => {
     return returnStr;
 }
 
-const SneakPeak = ({ articleId, title, authorId, txt, date }) => {
+const SneakPeak = ({ articleId, title, txt, date }) => {
     const navigate = useNavigate();
 
-    const author = SearchAuthor(authorId);
     const sneakText = stringExcerpt(txt);
     return (
         <div className="Sneakpeak">

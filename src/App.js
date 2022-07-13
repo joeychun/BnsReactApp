@@ -5,9 +5,8 @@ import Article from './pages/article';
 import Videos from './pages/videos';
 
 import Menu from './component/Header/menu';
-import FooterBar from './component/Footer/footerbar';
 
-import { BrowserRouter, Routes, Route, Navigate, Redirect, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 
 function App() {

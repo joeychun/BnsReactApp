@@ -1,12 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import { Card, Avatar } from 'antd';
 
 import MemberContainer from './memberContainer';
 
-import Box from '@mui/material/Box';
-
-const { Meta } = Card;
 
 const MembersRow = ({ infoList }) => {
     // This is how infoList will be formatted:

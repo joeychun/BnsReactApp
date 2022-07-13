@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Button, Icon, List } from 'semantic-ui-react'
+import { List } from 'semantic-ui-react'
 
 const InfoList = () => {
     return (
