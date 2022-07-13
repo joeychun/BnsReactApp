@@ -20,9 +20,11 @@ const Banner = ({ bannerId, noDivider, heading, textBodies, img, bgImg, bgColor,
 
                     </div>
                     <div style={{ maxWidth: maxWidth }} className="InfoCol">
-                        <div className="ImgBox">
-                            <img src={img}></img>
-                        </div>
+                        {img !== "" &&
+                            <div className="ImgBox">
+                                <img src={img}></img>
+                            </div>
+                        }
                     </div>
                 </div>
                 : // If the container is declared noDivider, the gray bar does not show.
@@ -33,9 +35,11 @@ const Banner = ({ bannerId, noDivider, heading, textBodies, img, bgImg, bgColor,
 
                     </div>
                     <div style={{ maxWidth: maxWidth }} className="InfoCol">
-                        <div className="ImgBox">
-                            <img src={img}></img>
-                        </div>
+                        {img !== "" &&
+                            <div className="ImgBox">
+                                <img src={img}></img>
+                            </div>
+                        }
                     </div>
                 </div>
             }
