@@ -16,7 +16,7 @@ const OneArticle = ({ id }) => {
 
     // As 'text' is derived from a JSON file, there are no newlines.
     // The process below adds in newlines by inserting <br>
-    const textArray = text.split(/\n/);
+    const textArray = text.split(/\n/).filter(t => t);
     console.log(textArray);
     const textParagraphs = textArray.map((paragraph, ind) => {
         return (
