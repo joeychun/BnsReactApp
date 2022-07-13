@@ -1,6 +1,5 @@
 import React from 'react';
 import Banner from '../../shared/Banner/banner';
-import EmptyBanner from '../../shared/Banner/emptybanner';
 
 const content = {
     heading: "Videos",

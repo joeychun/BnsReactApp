@@ -21,7 +21,7 @@ const Banner = ({ bannerId, noDivider, heading, textBodies, img, bgImg, bgColor,
                     </div>
                     <div style={{ maxWidth: maxWidth }} className="InfoCol">
                         <div className="ImgBox">
-                            <img src={img}></img>
+                            <img src={img} alt="img"></img>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const Banner = ({ bannerId, noDivider, heading, textBodies, img, bgImg, bgColor,
                     </div>
                     <div style={{ maxWidth: maxWidth }} className="InfoCol">
                         <div className="ImgBox">
-                            <img src={img}></img>
+                            <img src={img} alt="img"></img>
                         </div>
                     </div>
                 </div>

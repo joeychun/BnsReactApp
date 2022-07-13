@@ -5,7 +5,7 @@ import "./styles.css";
 
 
 const SemiMenu = () => {
-    const [visiblity, setVisibility] = useState(false);
+    const [setVisibility] = useState(false);
     const navigate = useNavigate();
 
     const location = useLocation();

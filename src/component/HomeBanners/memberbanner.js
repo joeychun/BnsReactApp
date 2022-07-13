@@ -1,11 +1,8 @@
 import React from 'react';
 import Banner from '../../shared/Banner/banner';
-import MemberContainer from '../Member/memberContainer';
-import MembersRow from '../Member/membersRow';
 import Box from '@mui/material/Box';
 import MembersContent from '../Member/membersContent';
 import EmptyBanner from '../../shared/Banner/emptybanner';
-import { Flex } from 'rebass/styled-components';
 
 const content = {
     heading: "Members",

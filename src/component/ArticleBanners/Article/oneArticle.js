@@ -4,11 +4,10 @@ import SearchAuthor from '../../../shared/Searcher/searchAuthor';
 import TxtReader from '../../../shared/TxtReader/txtreader';
 import Box from '@mui/material/Box';
 import './oneArticle.css';
-import { Col, Row } from 'antd';
-import { Footer } from 'antd/lib/layout/layout';
+import { Row } from 'antd';
 
 const OneArticle = ({ id }) => {
-    const { title, authorId, filename, date } = SearchArticle(id);
+    const { title, authorId, filename } = SearchArticle(id);
     const author = SearchAuthor(authorId);
 
     const parsedFilename = filename.replace('.txt', '').replace('.json', '');
