@@ -28,7 +28,7 @@
     font-size: 1.35rem;
     line-height: 1.125rem;
     font-family: Ubuntu, sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     float: left;
     text-align: left;
 }
@@ -37,10 +37,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    margin-bottom: 150px;
     width: 100%;
     max-width: 750px;
-    font-size: 1rem;
     line-height: 1.125rem;
     font-family: Ubuntu, sans-serif;
     font-weight: 500;
@@ -54,4 +52,21 @@
 
 .Article .paragraph {
     margin-bottom: 40px;
+}
+
+.Article .date {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    width: 100%;
+    max-width: 750px;
+    font-size: 1.2rem;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 100;
+    text-align: left;
+}
+
+b {
+    font-weight: bold;
 }

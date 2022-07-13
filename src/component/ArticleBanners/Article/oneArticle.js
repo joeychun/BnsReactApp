@@ -7,7 +7,7 @@ import './oneArticle.css';
 import { Row } from 'antd';
 
 const OneArticle = ({ id }) => {
-    const { title, authorId, filename } = SearchArticle(id);
+    const { title, authorId, filename, date } = SearchArticle(id);
     const author = SearchAuthor(authorId);
 
     const parsedFilename = filename.replace('.txt', '').replace('.json', '');
@@ -31,11 +31,14 @@ const OneArticle = ({ id }) => {
                 <h1 className="title">{title}</h1>
             </Row>
             <Row>
-                <h5 className="author">{`By ${author.name}`}</h5>
+                <h5 className="author">By <b>{author.name}</b></h5>
             </Row>
             <div className="paragraphs">
                 {textParagraphs}
             </div>
+            <Row>
+                <h5 className="date">Posted on <b>{date}</b></h5>
+            </Row>
         </Box>
     )
 }
