@@ -1,13 +1,10 @@
 import React from 'react';
 import Banner from '../../../shared/Banner/banner';
-import EmptyBanner from '../../../shared/Banner/emptybanner';
 import SneakPeak from './sneakpeak';
-import { Flex } from 'rebass/styled-components';
 import { Footer } from 'antd/lib/layout/layout';
 import Articles from '../../../content/Articles.json'
 import TxtReader from '../../../shared/TxtReader/txtreader';
 import DateSorter from '../../../shared/Sorter/dateSorter';
-import { Col, Row } from 'antd';
 
 const content = {
     heading: "Articles",

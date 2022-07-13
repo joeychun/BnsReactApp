@@ -1,4 +1,4 @@
-import { Row, Col, Card } from 'antd';
+import { Card } from 'antd';
 import React from 'react';
 
 const EmptyContainer = () => {

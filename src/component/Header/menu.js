@@ -1,6 +1,5 @@
-import { React, useState, Fragment } from "react";
-import { useNavigate, useLocation } from "react-router";
-import { Row, Col, Drawer } from "antd";
+import { React } from "react";
+import { Row } from "antd";
 import SemiMenu from './semiMenu';
 import './styles.css';
 
