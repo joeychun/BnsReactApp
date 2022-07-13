@@ -22,7 +22,7 @@ const Banner = ({ bannerId, noDivider, heading, textBodies, img, bgImg, bgColor,
                     <div style={{ maxWidth: maxWidth }} className="InfoCol">
                         {img !== "" &&
                             <div className="ImgBox">
-                                <img src={img}></img>
+                                <img alt={img} src={img}></img>
                             </div>
                         }
                     </div>
@@ -37,7 +37,7 @@ const Banner = ({ bannerId, noDivider, heading, textBodies, img, bgImg, bgColor,
                     <div style={{ maxWidth: maxWidth }} className="InfoCol">
                         {img !== "" &&
                             <div className="ImgBox">
-                                <img src={img}></img>
+                                <img alt={img} src={img}></img>
                             </div>
                         }
                     </div>
