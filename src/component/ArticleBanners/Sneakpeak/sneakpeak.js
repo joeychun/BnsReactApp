@@ -5,15 +5,7 @@ import { useNavigate } from 'react-router';
 import './styles.css';
 
 const stringExcerpt = (str) => {
-    const strArr = str.trim().split(/\s+/);
-
-    let returnStr = "";
-    for (let i = 0; i < 50; ++i) {
-        returnStr += " ";
-        returnStr += strArr[i];
-    }
-    returnStr += "...."
-    return returnStr;
+    return str.split(" ").slice(0, 50).join(" ") + "....";
 }
 
 const SneakPeak = ({ articleId, title, txt, date }) => {

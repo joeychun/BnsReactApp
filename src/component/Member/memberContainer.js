@@ -11,9 +11,6 @@ const MemberContainer = ({ name, picture, description }) => {
                 <Card
                     flexDirection='row'
                     hoverable
-                    style={{
-                        width: 400, height: 550
-                    }}
                     cover={<img alt={name} src={srcLink} />}
                 >
                     <Card.Meta title={name} description={description} />

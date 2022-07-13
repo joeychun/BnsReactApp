@@ -4,7 +4,7 @@ import SneakPeak from './sneakpeak';
 import { Footer } from 'antd/lib/layout/layout';
 import Articles from '../../../content/Articles.json'
 import TxtReader from '../../../shared/TxtReader/txtreader';
-import DateSorter from '../../../shared/Sorter/dateSorter';
+import DateSorter from '../../../shared/SortComparer/dateCmp';
 
 const content = {
     heading: "Articles",
@@ -28,7 +28,7 @@ const SneakpeaksBanner = () => {
 
     const sortedAllSneaks = allSneaks.sort((a, b) => {
         return (
-            DateSorter(a.props.date, b.props.date) === true ? -1 : 1
+            DateSorter(a.props.date, b.props.date)
         );
     })
 

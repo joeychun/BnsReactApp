@@ -5,9 +5,6 @@ const EmptyContainer = () => {
     return (
         <Card
             flexDirection='row'
-            style={{
-                width: 400, height: 550
-            }}
         >
             <Card.Meta title="" description="" />
         </Card>

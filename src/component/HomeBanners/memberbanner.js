@@ -8,7 +8,6 @@ const content = {
     heading: "Members",
     textBodies: ["asdf"],
     img: "",
-    bgImg: "../../../public/img/logo192.png", // This path is from banner.css's POV.
 }
 
 const cssSettings = {
@@ -21,7 +20,6 @@ const MemberBanner = () => {
         <Box>
             <Banner bannerId="memberBanner" noDivider={true} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
-            {/* <EmptyBanner bgColor={cssSettings.bgColor} topPadding={10} /> */}
             <EmptyBanner bgColor="#ffffff" topPadding={0} bottomPadding={0} />
             <MembersContent />
         </Box>

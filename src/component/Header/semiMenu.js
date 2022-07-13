@@ -5,7 +5,6 @@ import "./styles.css";
 
 
 const SemiMenu = () => {
-    const [setVisibility] = useState(false);
     const navigate = useNavigate();
 
     const location = useLocation();
@@ -17,7 +16,6 @@ const SemiMenu = () => {
     const scrollToElement = (id) => {
         if (location.pathname === "/") {
             document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-            setVisibility(false);
         } else {
             navigate("/")
         }
