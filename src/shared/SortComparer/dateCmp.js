@@ -56,7 +56,7 @@ const DateSorter_ = (date1, date2) => {
 }
 
 const DateSorter = (date1, date2) => {
-    return DateSorter_(date1, date2) ? 1 : -1;
+    return DateSorter_(date1, date2) ? -1 : 1;
 }
 
 export default DateSorter;
