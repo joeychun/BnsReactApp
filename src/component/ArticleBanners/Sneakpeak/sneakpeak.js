@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 import React from 'react';
-import { useNavigate } from 'react-router';
+// import { useNavigate } from 'react-router';
 
 import './styles.css';
 
@@ -17,7 +17,7 @@ const stringExcerpt = (str) => {
 }
 
 const SneakPeak = ({ articleId, title, txt, date }) => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const sneakText = stringExcerpt(txt);
     return (
@@ -27,7 +27,9 @@ const SneakPeak = ({ articleId, title, txt, date }) => {
                     <p className="Date">{date}</p>
                 </Col>
                 <Col span={12}>
-                    <h2 onClick={() => navigate(`/articles/${articleId}`)}>{title}</h2>
+                    <a href={`/articles/${articleId}`}>
+                        <h2>{title}</h2>
+                    </a>
                     <p className="Blob">{sneakText}</p>
                 </Col>
             </Row>
