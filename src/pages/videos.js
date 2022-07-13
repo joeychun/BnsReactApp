@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoBanner from '../component/VideoBanners/videobanners';
+import VideoBanner from '../component/VideoBanners/videobanner';
 import { Flex } from 'rebass/styled-components';
 
 

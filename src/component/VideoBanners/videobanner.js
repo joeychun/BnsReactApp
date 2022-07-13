@@ -15,7 +15,7 @@ const cssSettings = {
 const VideoBanner = () => {
     return (
         <div>
-            <Banner bannerId="" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={content.textBodies}
+            <Banner bannerId="" noDivider={true} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={content.textBodies}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
         </div>
     )
