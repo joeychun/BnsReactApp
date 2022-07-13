@@ -31,7 +31,7 @@ const SneakpeaksBanner = () => {
 
     const sortedAllSneaks = allSneaks.sort((a, b) => {
         return (
-            DateSorter(a.props.date, b.props.date) === 1 ? 1 : -1
+            DateSorter(a.props.date, b.props.date) === true ? -1 : 1
         );
     })
 
