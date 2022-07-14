@@ -24,12 +24,14 @@ const MembersRow = ({ infoList }) => {
     */
     const formattedList = [...infoList]
     for (let i = 0; i < 3 - infoList.length; ++i) {
-        formattedList.push({ name: "", picture: "", description: "" })
+        formattedList.push({ id: "", name: "", picture: "", description: "" })
     }
 
     const containers = formattedList.map((member, ind) => {
         return (
-            <Col key={ind} className="gutter-row" span={8}><MemberContainer name={member.name} picture={member.picture} description={member.description} /></Col>
+            <Col key={ind} className="gutter-row" span={8}>
+                <MemberContainer id={member.id} name={member.name} picture={member.picture} description={member.description} />
+            </Col>
         );
     })
 

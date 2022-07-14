@@ -27,7 +27,7 @@ const MembersContent = () => {
         );
     })
     return (
-        <div>
+        <div className="MemberContainers">
             {AllMemberContainers}
         </div>
     )
