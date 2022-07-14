@@ -19,10 +19,10 @@ const SneakPeak = ({ articleId, title, txt, date }) => {
                     <p className="Date">{date}</p>
                 </Col>
                 <Col span={12}>
-                    {/* <a href={`/articles/${articleId}`}>
+                    <a href={`/articles/${articleId}`}>
                         <h2>{title}</h2>
-                    </a> */}
-                    <h2 onClick={() => navigate(`/articles/${articleId}`)}>{title}</h2>
+                    </a>
+                    {/* <h2 onClick={() => navigate(`/articles/${articleId}`)}>{title}</h2> */}
                     <p className="Blob">{sneakText}</p>
                 </Col>
             </Row>

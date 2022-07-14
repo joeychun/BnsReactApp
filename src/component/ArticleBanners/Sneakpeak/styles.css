@@ -39,3 +39,15 @@
 .SneakpeaksBox {
     margin-top: 50px;
 }
+
+.SneakpeaksBox .ant-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.SneakpeaksBox .ant-col {
+    padding-right: 100%;
+    margin-right: 50px;
+}
