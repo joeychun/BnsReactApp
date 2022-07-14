@@ -1,4 +1,4 @@
-import { React,  Fragment } from "react";
+import { React, Fragment } from "react";
 import { useNavigate, useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import "./styles.css";
