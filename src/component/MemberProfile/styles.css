@@ -1,0 +1,37 @@
+.ProfileTop .ant-row {
+    display: flex;
+    justify-content: space-evenly; 
+    /* justify-content: center; */
+}
+
+.ProfileTop img {
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    margin-left: 27%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.ProfileTop .Texts {
+    text-align: left;
+}
+
+.ProfileTop .Title {
+    color: rgba(0,0,0,.85);
+    font-weight: 500.3;
+    font-size: 30px;
+    font-family: Ubuntu, sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    margin-left: 8%;
+}
+
+.ProfileTop .Description {
+    color: #00000073;
+    font-size: 27px;
+    margin-left: 8%;
+}

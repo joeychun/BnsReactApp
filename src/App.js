@@ -4,6 +4,7 @@ import Articles from './pages/articles';
 import Article from './pages/article';
 import Videos from './pages/videos';
 import Contact from './pages/contact';
+import Profile from './pages/profile';
 
 import Menu from './component/Header/menu';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/articles' exact element={<Articles />} />
           <Route path='/videos' exact element={<Videos />} />
           <Route path='/contact' exact element={<Contact />} />
+          <Route path='/profile/:id' exact element={<Profile />} />
         </Routes>
         {/* <FooterBar /> */}
       </div>
