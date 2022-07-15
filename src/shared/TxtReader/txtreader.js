@@ -1,7 +1,13 @@
-const TxtReader = () => {
-    const context = require.context('../../content/txts', true, /.json$/);
+const TxtReader = (articles) => {
+    let context;
+    if (articles === undefined) {
+        context = require.context('../../content/txts', true, /.json$/).keys();
+    } else {
+        context = articles;
+    }
+
     const all = {};
-    context.keys().forEach((key) => {
+    context.forEach((key) => {
         const fileName = key.replace('./', '');
         const resource = require(`../../content/txts/${fileName}`);
         const namespace = fileName.replace('.json', '');
