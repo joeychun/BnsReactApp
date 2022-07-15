@@ -1,4 +1,4 @@
-import { Col, Row } from 'antd';
+import { Col } from 'antd';
 import React from 'react';
 import SearchAuthor from '../../shared/Searcher/searchAuthor';
 import './styles.css';
@@ -8,15 +8,15 @@ const ProfileInfo = ({ id }) => {
     const srcLink = `../img/Members/${author.picture}`;
 
     return (
-        <Row className="ProfileTop" gutter={24}>
-            <Col style={{ width: "30%" }} className="gutter-row" span={8}>
+        <div className="ProfileTop" gutter={0}>
+            <Col style={{ width: "40%", display: "flexbox" }} align="right">
                 <img alt={author.picture} src={srcLink} />
             </Col>
-            <Col className="gutter-row Texts" span={16}>
+            <Col style={{ width: "60%" }} className="Texts" >
                 <div className="Title">{author.name}</div>
                 <div className="Description">{author.description}</div>
             </Col>
-        </Row>
+        </div>
     )
 }
 
