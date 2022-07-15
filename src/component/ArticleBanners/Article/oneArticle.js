@@ -19,15 +19,22 @@ const AuthorsElement = (authorId) => {
     */
     let authors;
     if (typeof (authorId) === "number") {
-        authors = [<b>{SearchAuthor(authorId).name}</b>];
+        authors = [
+            <a href={`/profile/${authorId}`}>
+                <b>{SearchAuthor(authorId).name}</b>
+            </a>
+        ];
     } else if (authorId.length === 2) {
         authors = authorId.map((id, ind) => {
             return (
                 <div style={{ display: "inline" }}>
-                    <b>{SearchAuthor(id).name}</b>
+                    <a href={`/profile/${id}`}>
+                        <b>{SearchAuthor(id).name}</b>
+                    </a>
                     {ind === 0 &&
                         " and "
                     }
+
                 </div>
             );
         })
@@ -36,7 +43,9 @@ const AuthorsElement = (authorId) => {
         authors = authorId.map((id, ind) => {
             return (
                 <div style={{ display: "inline" }}>
-                    <b>{SearchAuthor(id).name}</b>
+                    <a href={`/profile/${id}`}>
+                        <b>{SearchAuthor(id).name}</b>
+                    </a>
                     {ind !== authorId.length - 1 &&
                         ", "
                     }
