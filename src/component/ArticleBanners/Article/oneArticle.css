@@ -4,8 +4,13 @@
     justify-content: center;
 }
 
+.Article .ant-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .Article .title{
-    display: inline;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0.5rem;
