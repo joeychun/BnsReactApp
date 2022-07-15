@@ -26,5 +26,12 @@
         "authorId": 25,
         "filename": "diamonds_the_product_of_physiological_advertisement.json",
         "date": "April 2, 2022"
+    },
+    {
+        "id": 5,
+        "title": "Multi-author test",
+        "authorId": [7, 16, 25],
+        "filename": "diamonds_the_product_of_physiological_advertisement.json",
+        "date": "April 1, 2022"
     }
 ]
