@@ -1,6 +1,5 @@
 import { Col, Row } from 'antd';
 import React from 'react';
-import { useNavigate } from 'react-router';
 
 import './styles.css';
 
@@ -9,8 +8,6 @@ const stringExcerpt = (str) => {
 }
 
 const SneakPeak = ({ articleId, title, txt, date }) => {
-    const navigate = useNavigate();
-
     const sneakText = stringExcerpt(txt);
     return (
         <div className="Sneakpeak">
