@@ -62,19 +62,19 @@
     {
         "id": 11,
         "name": "Hyeonhong Chang",
-        "picture": "NA.jpeg",
+        "picture": "Hyeonhong.png",
         "description": "Video"
     },
     {
         "id": 12,
         "name": "Jaewon Kim",
-        "picture": "NA.jpeg",
+        "picture": "Jaewon.jpg",
         "description": "Video"
     },
     {
         "id": 13,
         "name": "Jin Kim",
-        "picture": "NA.jpeg",
+        "picture": "Jin.jpg",
         "description": "Video"
     },
     {
@@ -86,7 +86,7 @@
     {
         "id": 15,
         "name": "Yoonwoo Lee",
-        "picture": "NA.jpeg",
+        "picture": "Yoonwoo.jpg",
         "description": "Video"
     },
     {
@@ -98,7 +98,7 @@
     {
         "id": 17,
         "name": "Jiyu Hong",
-        "picture": "NA.jpeg",
+        "picture": "Jiyu.png",
         "description": "Writer"
     },
     {
@@ -110,13 +110,13 @@
     {
         "id": 19,
         "name": "Jenny Park",
-        "picture": "NA.jpeg",
+        "picture": "Jenny.png",
         "description": "Writer"
     },
     {
         "id": 20,
         "name": "Jian Hong",
-        "picture": "NA.jpeg",
+        "picture": "Jian.png",
         "description": "Writer"
     },
     {
@@ -134,19 +134,19 @@
     {
         "id": 23,
         "name": "Sean Kim",
-        "picture": "NA.jpeg",
+        "picture": "Sean.jpg",
         "description": "Writer"
     },
     {
         "id": 24,
         "name": "Yeonjae Kim",
-        "picture": "NA.jpeg",
+        "picture": "Yeonjae.jpeg",
         "description": "Writer"
     },
     {
         "id": 25,
         "name": "Gyusung Lee",
-        "picture": "NA.jpeg",
+        "picture": "Gyusung.jpg",
         "description": "Public Relations"
     }
 ]
