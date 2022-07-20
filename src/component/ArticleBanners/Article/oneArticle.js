@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchArticle from '../../../shared/Searcher/searchArticle';
 import SearchAuthor from '../../../shared/Searcher/searchAuthor';
-import TxtReader from '../../../shared/TxtReader/txtreader';
+import TxtReader from '../../../shared/Reader/txtreader';
 import Box from '@mui/material/Box';
 import { Row } from 'antd';
 import './oneArticle.css';

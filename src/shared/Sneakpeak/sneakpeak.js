@@ -3,12 +3,7 @@ import React from 'react';
 
 import './styles.css';
 
-const stringExcerpt = (str) => {
-    return str.split(" ").slice(0, 50).join(" ") + "....";
-}
-
-const SneakPeak = ({ articleId, title, txt, date }) => {
-    const sneakText = stringExcerpt(txt);
+const SneakPeak = ({ articleId, title, content, date }) => {
     return (
         <div className="Sneakpeak">
             <Row style={{ height: "100%" }} gutter={18}>
@@ -20,7 +15,7 @@ const SneakPeak = ({ articleId, title, txt, date }) => {
                         <h2>{title}</h2>
                     </a>
                     {/* <h2 onClick={() => navigate(`/articles/${articleId}`)}>{title}</h2> */}
-                    <p className="Blob">{sneakText}</p>
+                    <div className="Blob">{content}</div>
                 </Col>
             </Row>
         </div>

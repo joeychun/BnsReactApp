@@ -20,7 +20,7 @@
     color:#33699f;
 }
 
-.Sneakpeak .Blob {
+.Sneakpeak .Blob p {
     max-width: 900px;
     font-weight: 500;
     font-size: 20px;
@@ -34,10 +34,6 @@
     font-size: 17px;
     font-family: Ubuntu, sans-serif;
     text-align: left;
-}
-
-.SneakpeaksBox {
-    margin-top: 50px;
 }
 
 .SneakpeaksBox .ant-row {
