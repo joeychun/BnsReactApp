@@ -3,9 +3,9 @@
         "type": "video",
         "id": 1,
         "title": "Rick Roll",
-        "authorId": 9,
+        "authorId": [7, 9],
         "filename": "test1.json",
-        "date": "March 23, 2022"
+        "date": "April 5, 2022"
     },
     {
         "type": "video",
