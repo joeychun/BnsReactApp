@@ -1,0 +1,18 @@
+[
+    {
+        "type": "video",
+        "id": 1,
+        "title": "Rick Roll",
+        "authorId": 9,
+        "filename": "test1.json",
+        "date": "March 23, 2022"
+    },
+    {
+        "type": "video",
+        "id": 2,
+        "title": "Joey vs Pzzang",
+        "authorId": 25,
+        "filename": "test2.json",
+        "date": "July 20, 2022"
+    }
+]
