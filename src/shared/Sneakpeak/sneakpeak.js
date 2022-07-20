@@ -3,7 +3,8 @@ import React from 'react';
 
 import './styles.css';
 
-const SneakPeak = ({ articleId, title, content, date }) => {
+const SneakPeak = ({ sourceId, title, content, date, linkFunc }) => {
+    const sourceLink = linkFunc(sourceId);
     return (
         <div className="Sneakpeak">
             <Row style={{ height: "100%" }} gutter={18}>
@@ -11,10 +12,9 @@ const SneakPeak = ({ articleId, title, content, date }) => {
                     <p className="Date">{date}</p>
                 </Col>
                 <Col span={12}>
-                    <a href={`/articles/${articleId}`}>
+                    <a href={sourceLink}>
                         <h2>{title}</h2>
                     </a>
-                    {/* <h2 onClick={() => navigate(`/articles/${articleId}`)}>{title}</h2> */}
                     <div className="Blob">{content}</div>
                 </Col>
             </Row>

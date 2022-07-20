@@ -20,6 +20,10 @@ const stringExcerpt = (str) => {
     return str.split(" ").slice(0, 50).join(" ") + "....";
 }
 
+const linkFunc = (articleId) => {
+    return `/articles/${articleId}`;
+}
+
 const ArticleSneakpeaks = () => {
     const allTextFiles = TxtReader();
     const contentFunc = (unprocessedContent) => {
@@ -31,7 +35,7 @@ const ArticleSneakpeaks = () => {
             <Banner bannerId="" noDivider={true} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={content.textBodies}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
             <SneakpeaksBanner contentJsons={Articles} allFiles={allTextFiles}
-                contentFunc={(c) => contentFunc(c)} includeMargin={true} />
+                contentFunc={(c) => contentFunc(c)} linkFunc={(articleId) => linkFunc(articleId)} includeMargin={true} />
         </div>
     )
 }

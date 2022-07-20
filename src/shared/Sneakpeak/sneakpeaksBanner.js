@@ -2,7 +2,7 @@ import React from 'react';
 import SneakPeak from './sneakpeak';
 import DateSorter from '../SortComparer/dateCmp';
 
-const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, includeMargin }) => {
+const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, linkFunc, includeMargin }) => {
     /* 
     'contentJsons' is a JSON or a filtered JSON that
     contains all of the content info.
@@ -15,6 +15,9 @@ const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, includeMargin }
     the content in the JSON file. Namely, in the case of articles,
     it returns an excerpt of the text, surrounded in <p>.
 
+    'linkFunc' is a function that returns the sneakpeak's link based on its ID.
+    Namely, in the case of articles, it returns `/articles/${articleId}`
+
     'includeMargin' has to do with css––a boolean about whether this
     component should have a top margin.
     */
@@ -22,8 +25,8 @@ const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, includeMargin }
     const allSneaks = contentJsons.map(({ id, title, authorId, filename, date }) => {
         const parsedFilename = filename.replace('.txt', '').replace('.json', ''); // In case file format is added
         const content = contentFunc(allFiles[parsedFilename]);
-        return <SneakPeak key={id} articleId={id} title={title} authorId={authorId}
-            content={content} date={date} />;
+        return <SneakPeak key={id} sourceId={id} title={title} authorId={authorId}
+            content={content} date={date} linkFunc={(contentId) => linkFunc(contentId)} />;
     })
 
     const sortedAllSneaks = allSneaks.sort((a, b) => {

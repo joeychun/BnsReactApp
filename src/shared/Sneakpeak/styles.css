@@ -20,8 +20,11 @@
     color:#33699f;
 }
 
+.Sneakpeak .Blob {
+    width: 900px;
+}
+
 .Sneakpeak .Blob p {
-    max-width: 900px;
     font-weight: 500;
     font-size: 20px;
     color:grey;
