@@ -1,0 +1,9 @@
+.Thumbnails {
+    text-align: left;
+}
+
+.Thumbnails img {
+    width: 500px;
+    height: 275px;
+    object-fit: cover;
+}
