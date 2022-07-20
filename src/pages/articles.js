@@ -1,12 +1,12 @@
 import React from 'react';
-import SneakpeaksBanner from '../component/ArticleBanners/Sneakpeak/sneakpeaksBanner';
+import ArticleSneakpeaks from '../component/ArticleBanners/ArticleSneaks/articleSneakpeaks';
 import { Flex } from 'rebass/styled-components';
 
 
 const Articles = () => {
     return (
         <Flex width={1} flexDirection='column'>
-            <SneakpeaksBanner />
+            <ArticleSneakpeaks />
         </Flex>
     )
 }
