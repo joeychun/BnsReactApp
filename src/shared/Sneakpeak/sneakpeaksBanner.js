@@ -2,7 +2,7 @@ import React from 'react';
 import SneakPeak from './sneakpeak';
 import DateSorter from '../SortComparer/dateCmp';
 
-const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, linkFunc, includeMargin }) => {
+const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, linkFunc, includeMargin, hrefcontent }) => {
     /* 
     'contentJsons' is a JSON or a filtered JSON that
     contains all of the content info.
@@ -20,14 +20,22 @@ const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, linkFunc, inclu
 
     'includeMargin' has to do with css––a boolean about whether this
     component should have a top margin.
+
+    'hrefcontent' is a boolean about whether the content should, along with the
+    title, be a hyperlink. Default is false.
     */
+    let hrefContent = hrefcontent;
+    if (hrefcontent === undefined) {
+        hrefContent = false;
+    }
 
     const allSneaks = contentJsons.map(({ type, id, title, authorId, filename, date }) => {
         const parsedFilename = filename.replace('.txt', '').replace('.json', ''); // In case file format is added
         const content = contentFunc(allFiles[parsedFilename]);
         return <SneakPeak key={id} sourceId={id} title={title} authorId={authorId}
             content={content} date={date} type={type}
-            linkFunc={(contentId, type) => linkFunc(contentId, type)} />;
+            linkFunc={(contentId, type) => linkFunc(contentId, type)}
+            hrefcontent={hrefContent} />;
     })
 
     const sortedAllSneaks = allSneaks.sort((a, b) => {

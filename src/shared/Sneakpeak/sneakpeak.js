@@ -3,7 +3,7 @@ import React from 'react';
 
 import './styles.css';
 
-const SneakPeak = ({ sourceId, title, content, date, type, linkFunc }) => {
+const SneakPeak = ({ sourceId, title, content, date, type, linkFunc, hrefcontent }) => {
     const sourceLink = linkFunc(sourceId, type);
     return (
         <div className="Sneakpeak">
@@ -15,7 +15,13 @@ const SneakPeak = ({ sourceId, title, content, date, type, linkFunc }) => {
                     <a href={sourceLink}>
                         <h2>{title}</h2>
                     </a>
-                    <div className="Blob">{content}</div>
+                    {hrefcontent ?
+                        <a href={sourceLink}>
+                            <div className="Blob">{content}</div>
+                        </a>
+                        :
+                        <div className="Blob">{content}</div>
+                    }
                 </Col>
             </Row>
         </div>
