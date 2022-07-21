@@ -1,72 +1,18 @@
 import React from 'react';
 import Searcher from '../../../shared/Searcher/searcher';
-import SearchAuthor from '../../../shared/Searcher/searchAuthor';
-import TxtReader from '../../../shared/Reader/txtreader';
+import Reader from '../../../shared/Reader/reader';
+import AuthorsSection from '../../../shared/AuthorsSection/authorsSection';
 import Box from '@mui/material/Box';
 import { Row } from 'antd';
 import './oneArticle.css';
 
-const AuthorsElement = (authorId) => {
-    /* authorId format:
-
-    If the article is single-author: 
-    authorId is a Number, the author's id 
-    (ex: 10)
-
-    If the article is multi-author:
-    authorId is a list of Numbers, the authors' ids
-    (ex: [3, 15, 9])
-    */
-    let authors;
-    if (typeof (authorId) === "number") {
-        authors = [
-            <a href={`/profile/${authorId}`}>
-                <b>{SearchAuthor(authorId).name}</b>
-            </a>
-        ];
-    } else if (authorId.length === 2) {
-        authors = authorId.map((id, ind) => {
-            return (
-                <div style={{ display: "inline" }}>
-                    <a href={`/profile/${id}`}>
-                        <b>{SearchAuthor(id).name}</b>
-                    </a>
-                    {ind === 0 &&
-                        " and "
-                    }
-
-                </div>
-            );
-        })
-    }
-    else {
-        authors = authorId.map((id, ind) => {
-            return (
-                <div style={{ display: "inline" }}>
-                    <a href={`/profile/${id}`}>
-                        <b>{SearchAuthor(id).name}</b>
-                    </a>
-                    {ind !== authorId.length - 1 &&
-                        ", "
-                    }
-                    {ind === authorId.length - 2 &&
-                        "and "
-                    }
-                </div>
-            );
-        })
-    }
-
-    return authors;
-}
-
 const OneArticle = ({ id }) => {
     const { title, authorId, filename, date } = Searcher("article", id);
 
-    const authorStr = AuthorsElement(authorId);
+    const authorStr = AuthorsSection(authorId);
 
     const parsedFilename = filename.replace('.txt', '').replace('.json', '');
-    const text = TxtReader()[parsedFilename].text;
+    const text = Reader({ article: null })[parsedFilename].text;
 
     // As 'text' is derived from a JSON file, there are no newlines.
     // The process below adds in newlines by inserting <br>

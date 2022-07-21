@@ -8,3 +8,9 @@
     border-radius: 15px 15px 15px 15px;
     object-fit: cover;
 }
+
+.video-responsive iframe{
+    padding-top: 30px;
+    width: 750px;
+    height: 422px;
+}
