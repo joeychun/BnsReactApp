@@ -11,7 +11,7 @@ const TxtReader = (videos) => {
         const fileName = key.replace('./', '');
         const resource = require(`../../content/vids/${fileName}`);
         const namespace = fileName.replace('.json', '');
-        all[namespace] = JSON.parse(JSON.stringify(resource));
+        all[namespace] = { type: "video", ...JSON.parse(JSON.stringify(resource)) };
 
     });
     return all;

@@ -11,7 +11,7 @@ const TxtReader = (articles) => {
         const fileName = key.replace('./', '');
         const resource = require(`../../content/txts/${fileName}`);
         const namespace = fileName.replace('.json', '');
-        all[namespace] = JSON.parse(JSON.stringify(resource));
+        all[namespace] = { type: "article", ...JSON.parse(JSON.stringify(resource)) };
 
     });
     return all;
