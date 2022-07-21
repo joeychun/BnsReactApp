@@ -1,31 +1,25 @@
 import React from 'react';
 import SneakpeaksBanner from '../../shared/Sneakpeak/sneakpeaksBanner';
-import FilterArticle from '../../shared/Filter/filterArticle';
-import FilterVideos from '../../shared/Filter/filterVideo';
-import TxtReader from '../../shared/Reader/txtreader';
-import VidReader from '../../shared/Reader/vidreader';
 import YoutubeThumbnail from '../../shared/YoutubeEmbed/thumbnail';
 import ThumbnailWrapper from '../../shared/ThumbnailWrapper/thumbnailWrapper';
+import Reader from '../../shared/Reader/reader';
+import Filter from '../../shared/Filter/filter';
+import Combiner from '../../shared/Filter/filterCombine';
 
 const stringExcerpt = (str) => {
     return str.split(" ").slice(0, 50).join(" ") + "....";
 }
 
-const linkFunc = (type, articleId) => {
+const linkFunc = (articleId, type) => {
     return `/${type}s/${articleId}`;
 }
 
 const ProfileContributions = ({ id }) => {
-    const articles = FilterArticle(parseInt(id));
-    const videos = FilterVideos(parseInt(id));
-    const sources = articles.concat(videos);
+    const filtered = Filter(["article", "video"], parseInt(id));
+    const sources = Combiner(filtered);
 
-    const articlePaths = articles.map((element) => `./${element.filename}`);
-    const videoPaths = videos.map((element) => `./${element.filename}`);
+    const allFiles = Reader(filtered);
 
-    const allTextFiles = TxtReader(articlePaths);
-    const allVidFiles = VidReader(videoPaths);
-    const allFiles = { ...allTextFiles, ...allVidFiles };
     const contentFunc = (unprocessedContent) => {
         if (unprocessedContent.type === "article") {
             return <p>{stringExcerpt(unprocessedContent.text)}</p>;

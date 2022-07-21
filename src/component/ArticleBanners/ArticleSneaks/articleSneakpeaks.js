@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../../../shared/Banner/banner';
 import SneakpeaksBanner from '../../../shared/Sneakpeak/sneakpeaksBanner';
 import Articles from '../../../content/Articles.json'
-import TxtReader from '../../../shared/Reader/txtreader';
+import Reader from '../../../shared/Reader/reader';
 
 
 const content = {
@@ -25,7 +25,7 @@ const linkFunc = (articleId) => {
 }
 
 const ArticleSneakpeaks = () => {
-    const allTextFiles = TxtReader();
+    const allTextFiles = Reader({ article: null });
     const contentFunc = (unprocessedContent) => {
         return <p>{stringExcerpt(unprocessedContent.text)}</p>;
     }

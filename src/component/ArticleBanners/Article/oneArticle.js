@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchArticle from '../../../shared/Searcher/searchArticle';
+import Searcher from '../../../shared/Searcher/searcher';
 import SearchAuthor from '../../../shared/Searcher/searchAuthor';
 import TxtReader from '../../../shared/Reader/txtreader';
 import Box from '@mui/material/Box';
@@ -61,7 +61,7 @@ const AuthorsElement = (authorId) => {
 }
 
 const OneArticle = ({ id }) => {
-    const { title, authorId, filename, date } = SearchArticle(id);
+    const { title, authorId, filename, date } = Searcher("article", id);
 
     const authorStr = AuthorsElement(authorId);
 

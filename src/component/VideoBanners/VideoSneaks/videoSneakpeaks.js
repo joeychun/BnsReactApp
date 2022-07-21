@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../../../shared/Banner/banner';
 import SneakpeaksBanner from '../../../shared/Sneakpeak/sneakpeaksBanner';
 import Videos from '../../../content/Videos.json';
-import VidReader from '../../../shared/Reader/vidreader';
+import Reader from '../../../shared/Reader/reader';
 import YoutubeThumbnail from '../../../shared/YoutubeEmbed/thumbnail';
 import ThumbnailWrapper from '../../../shared/ThumbnailWrapper/thumbnailWrapper';
 
@@ -23,7 +23,7 @@ const linkFunc = (videoId) => {
 }
 
 const VideoSneakpeaks = () => {
-    const allVidFiles = VidReader();
+    const allVidFiles = Reader({ video: null });
     const contentFunc = (unprocessedContent) => {
         const thumbnail = <YoutubeThumbnail videoId={unprocessedContent.videoId} />
         return <ThumbnailWrapper thumbnail={thumbnail} description={unprocessedContent.text} />
