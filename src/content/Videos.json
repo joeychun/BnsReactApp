@@ -1,6 +1,5 @@
 [
     {
-        "type": "video",
         "id": 1,
         "title": "Rick Roll",
         "authorId": [7, 9],
@@ -8,7 +7,6 @@
         "date": "April 5, 2022"
     },
     {
-        "type": "video",
         "id": 2,
         "title": "Joey vs Pzzang",
         "authorId": 25,
