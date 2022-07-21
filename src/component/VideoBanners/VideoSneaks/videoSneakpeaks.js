@@ -34,7 +34,8 @@ const VideoSneakpeaks = () => {
             <Banner bannerId="" noDivider={true} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={content.textBodies}
                 img={content.img} bgImg={content.bgImg} maxWidth={cssSettings.maxWidth} />
             <SneakpeaksBanner contentJsons={Videos} allFiles={allVidFiles}
-                contentFunc={(c) => contentFunc(c)} linkFunc={(videoId) => linkFunc(videoId)} includeMargin={true} />
+                contentFunc={(c) => contentFunc(c)} linkFunc={(videoId) => linkFunc(videoId)}
+                includeMargin={true} hrefcontent={true} />
         </div>
     )
 }
