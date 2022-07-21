@@ -11,8 +11,8 @@ const stringExcerpt = (str) => {
     return str.split(" ").slice(0, 50).join(" ") + "....";
 }
 
-const linkFunc = (articleId) => {
-    return `/articles/${articleId}`;
+const linkFunc = (type, articleId) => {
+    return `/${type}s/${articleId}`;
 }
 
 const ProfileContributions = ({ id }) => {
@@ -27,11 +27,9 @@ const ProfileContributions = ({ id }) => {
     const allVidFiles = VidReader(videoPaths);
     const allFiles = { ...allTextFiles, ...allVidFiles };
     const contentFunc = (unprocessedContent) => {
-        // if (unprocessedContent.type === "article") { <-- TODO : fix
-        if (unprocessedContent.videoId === undefined) {
+        if (unprocessedContent.type === "article") {
             return <p>{stringExcerpt(unprocessedContent.text)}</p>;
-            // } else if (unprocessedContent.type === "video") {
-        } else {
+        } else if (unprocessedContent.type === "video") {
             const thumbnail = <YoutubeThumbnail videoId={unprocessedContent.videoId} />
             return <ThumbnailWrapper thumbnail={thumbnail} description={unprocessedContent.text} />
         }
@@ -42,7 +40,7 @@ const ProfileContributions = ({ id }) => {
             {sources.length !== 0 &&
                 <div className="ProfileSneaks">
                     <SneakpeaksBanner contentJsons={sources} allFiles={allFiles}
-                        contentFunc={(c) => contentFunc(c)} linkFunc={(sourceId) => linkFunc(sourceId)} includeMargin={false} />
+                        contentFunc={(c) => contentFunc(c)} linkFunc={(sourceId, type) => linkFunc(sourceId, type)} includeMargin={false} />
                 </div>
 
             }

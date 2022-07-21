@@ -3,8 +3,8 @@ import React from 'react';
 
 import './styles.css';
 
-const SneakPeak = ({ sourceId, title, content, date, linkFunc }) => {
-    const sourceLink = linkFunc(sourceId);
+const SneakPeak = ({ sourceId, title, content, date, type, linkFunc }) => {
+    const sourceLink = linkFunc(sourceId, type);
     return (
         <div className="Sneakpeak">
             <Row style={{ height: "100%" }} gutter={18}>

@@ -22,11 +22,12 @@ const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, linkFunc, inclu
     component should have a top margin.
     */
 
-    const allSneaks = contentJsons.map(({ id, title, authorId, filename, date }) => {
+    const allSneaks = contentJsons.map(({ type, id, title, authorId, filename, date }) => {
         const parsedFilename = filename.replace('.txt', '').replace('.json', ''); // In case file format is added
         const content = contentFunc(allFiles[parsedFilename]);
         return <SneakPeak key={id} sourceId={id} title={title} authorId={authorId}
-            content={content} date={date} linkFunc={(contentId) => linkFunc(contentId)} />;
+            content={content} date={date} type={type}
+            linkFunc={(contentId, type) => linkFunc(contentId, type)} />;
     })
 
     const sortedAllSneaks = allSneaks.sort((a, b) => {
