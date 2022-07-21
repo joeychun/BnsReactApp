@@ -1,7 +1,7 @@
-const TxtReader = (videos) => {
+const VidReader = (videos) => {
     let context;
     if (videos === undefined) {
-        context = require.context('../../content/vids', true, /.json$/).keys();
+        context = require.context('../../content/videos', true, /.json$/).keys();
     } else {
         context = videos;
     }
@@ -9,7 +9,7 @@ const TxtReader = (videos) => {
     const all = {};
     context.forEach((key) => {
         const fileName = key.replace('./', '');
-        const resource = require(`../../content/vids/${fileName}`);
+        const resource = require(`../../content/videos/${fileName}`);
         const namespace = fileName.replace('.json', '');
         all[namespace] = { type: "video", ...JSON.parse(JSON.stringify(resource)) };
 
@@ -17,7 +17,7 @@ const TxtReader = (videos) => {
     return all;
 }
 
-export default TxtReader;
+export default VidReader;
 
 
 
