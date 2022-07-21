@@ -3,6 +3,7 @@ import Home from './pages/home';
 import Articles from './pages/articles';
 import Article from './pages/article';
 import Videos from './pages/videos';
+import Video from './pages/video';
 import Contact from './pages/contact';
 import Profile from './pages/profile';
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' exact element={<Home />} />
           <Route path='/articles/:id' exact element={<Article />} />
           <Route path='/articles' exact element={<Articles />} />
+          <Route path='/videos/:id' exact element={<Video />} />
           <Route path='/videos' exact element={<Videos />} />
           <Route path='/contact' exact element={<Contact />} />
           <Route path='/profile/:id' exact element={<Profile />} />
