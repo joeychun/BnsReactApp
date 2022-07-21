@@ -37,9 +37,9 @@ const OneFilter = (sourceType, authorId) => {
         case "video":
         case "videos":
             return Filter_(AllVideos, "video", authorId);
+        default:
+            return null;
     }
-    return Filter_()
-
 }
 
 const Filter = (sourceTypes, authorId, doCombine = true) => {
