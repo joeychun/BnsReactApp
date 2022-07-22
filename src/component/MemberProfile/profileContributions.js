@@ -29,12 +29,17 @@ const ProfileContributions = ({ id }) => {
         }
     }
 
+    const hrefcontent = (unprocessedContent) => {
+        return unprocessedContent.type === "video";
+    }
+
     return (
         <div>
             {sources.length !== 0 &&
                 <div className="ProfileSneaks">
                     <SneakpeaksBanner contentJsons={sources} allFiles={allFiles}
-                        contentFunc={(c) => contentFunc(c)} linkFunc={(sourceId, type) => linkFunc(sourceId, type)} includeMargin={false} />
+                        contentFunc={(c) => contentFunc(c)} linkFunc={(sourceId, type) => linkFunc(sourceId, type)}
+                        includeMargin={false} hrefcontent={(c) => hrefcontent(c)} />
                 </div>
 
             }

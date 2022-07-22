@@ -21,21 +21,26 @@ const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, linkFunc, inclu
     'includeMargin' has to do with css––a boolean about whether this
     component should have a top margin.
 
-    'hrefcontent' is a boolean about whether the content should, along with the
-    title, be a hyperlink. Default is false.
+    'hrefcontent' is a boolean or boolean-returning function about whether the content 
+    should, along with the title, be a hyperlink. Default is false.
     */
+
+    // If hrefcontent is passed as a boolean, convert that to a function
     let hrefContent = hrefcontent;
-    if (hrefcontent === undefined) {
-        hrefContent = false;
+    if (hrefcontent === undefined || hrefcontent === false) {
+        hrefContent = () => false;
+    } else if (hrefcontent === true) {
+        hrefContent = () => true;
     }
 
     const allSneaks = contentJsons.map(({ type, id, title, authorId, filename, date }) => {
         const parsedFilename = filename.replace('.txt', '').replace('.json', ''); // In case file format is added
         const content = contentFunc(allFiles[parsedFilename]);
+        const doHref = hrefContent(allFiles[parsedFilename])
         return <SneakPeak key={id} sourceId={id} title={title} authorId={authorId}
             content={content} date={date} type={type}
             linkFunc={(contentId, type) => linkFunc(contentId, type)}
-            hrefcontent={hrefContent} />;
+            hrefcontent={doHref} />;
     })
 
     const sortedAllSneaks = allSneaks.sort((a, b) => {
