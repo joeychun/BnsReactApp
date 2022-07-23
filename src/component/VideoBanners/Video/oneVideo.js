@@ -9,6 +9,16 @@ import './oneVideo.css';
 
 
 const OneVideo = ({ id }) => {
+    /* 
+    OneVideo gets information (located in src/content) about an video, then converts 
+    and returns that information as appropriate JSX that has all components 
+    from one video, such as its title, text, youtube video, author, and date.
+    ________________________________________
+
+    'id', derived from the params of videos/:id, refers to the unique id
+    of the video dealt in this function/component.
+    */
+
     const { title, authorId, filename, date } = Searcher("video", id);
 
     const authorStr = AuthorsSection(authorId);

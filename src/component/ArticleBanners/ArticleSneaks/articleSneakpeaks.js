@@ -25,6 +25,11 @@ const linkFunc = (articleId) => {
 }
 
 const ArticleSneakpeaks = () => {
+    /* 
+    ArticleSneakpeaks gets all article information (located in src/content), then
+    converts and returns that information as JSX that appropriately displays all articles' titles,
+    blob (text excerpt), and date.
+    */
     const allTextFiles = Reader({ article: null });
     const contentFunc = (unprocessedContent) => {
         return <p>{stringExcerpt(unprocessedContent.text)}</p>;

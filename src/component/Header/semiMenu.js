@@ -5,6 +5,10 @@ import "./styles.css";
 
 
 const SemiMenu = () => {
+    /*
+    SemiMenu returns JSX the menu, containing components
+    redirecting or leading to the website's different pages.
+    */
     const navigate = useNavigate();
 
     const location = useLocation();

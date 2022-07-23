@@ -23,6 +23,11 @@ const linkFunc = (videoId) => {
 }
 
 const VideoSneakpeaks = () => {
+    /* 
+    VideoSneakpeaks gets all video information (located in src/content), then
+    converts and returns that information as JSX that appropriately displays all videos' titles,
+    thumbnail, and date.
+    */
     const allVidFiles = Reader({ video: null });
     const contentFunc = (unprocessedContent) => {
         const thumbnail = <YoutubeThumbnail videoId={unprocessedContent.videoId} />

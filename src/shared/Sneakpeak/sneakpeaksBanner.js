@@ -4,6 +4,10 @@ import DateSorter from '../SortComparer/dateCmp';
 
 const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, linkFunc, includeMargin, hrefcontent }) => {
     /* 
+    SneakpeaksBanner receives content information from 'contentJsons', then
+    returns JSX: a banner of appropriately styled various sneakpeaks.
+    ________________________________________
+
     'contentJsons' is a JSON or a filtered JSON that
     contains all of the content info.
 

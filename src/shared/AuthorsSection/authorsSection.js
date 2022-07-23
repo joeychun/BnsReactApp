@@ -1,15 +1,22 @@
 import SearchAuthor from "../Searcher/searchAuthor";
 
 const AuthorsSection = (authorId) => {
-    /* authorId format:
+    /* 
+    AuthorsSection receives one or various author ids and converts them into
+    JSX––a line of text that has all authors' names that have hyperlinks leading
+    to each of their profile. This is then returned.
+    ________________________________________
 
-    If the article is single-author: 
-    authorId is a Number, the author's id 
-    (ex: 10)
+    'authorId' is one or many author ids––unique numbers each author possesses. These
+    numbers (or this number) will be converted into names. 'authorId' is formatted as such:
 
-    If the article is multi-author:
-    authorId is a list of Numbers, the authors' ids
-    (ex: [3, 15, 9])
+        Single-author: 
+        authorId is a number: the author's id 
+        (For example: 10)
+
+        Multi-author:
+        authorId is a list of numbers: the authors' ids
+        (For example: [3, 15, 9])
     */
     let authors;
     if (typeof (authorId) === "number") {

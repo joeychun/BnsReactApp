@@ -4,6 +4,9 @@ import SemiMenu from './semiMenu';
 import './styles.css';
 
 const Menu = () => {
+  /*
+  Menu returns JSX of the SemiMenu with more styling.
+  */
   return (
     <header className="Header">
       <div className="MenuContainer">

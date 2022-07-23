@@ -16,6 +16,10 @@ const cssSettings = {
 }
 
 const MemberBanner = () => {
+    /*
+    MemberBanner returns JSX of the banner for the member section of the home page as
+    well as MembersContent, which displays Our Team.
+    */
     return (
         <Box>
             <Banner bannerId="memberBanner" noDivider={true} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={[]}

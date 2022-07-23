@@ -15,6 +15,13 @@ const linkFunc = (articleId, type) => {
 }
 
 const ProfileContributions = ({ id }) => {
+    /*
+    ProfileContributions returns JSX of a section of a member's profile: his or her 
+    contributions, or works (articles and videos, for example).
+    ________________________________________
+
+    'id' is the unique numeric id of the member whose profile contributions will be displayed.
+    */
     const filtered = Filter(["article", "video"], parseInt(id));
     const sources = Combiner(filtered);
 

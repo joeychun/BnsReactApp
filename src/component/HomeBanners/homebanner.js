@@ -5,6 +5,9 @@ import Box from '@mui/material/Box';
 
 
 const HomeBanner = () => {
+    /*
+    HomeBanner returns JSX of the banners, About and Member, for the home page.
+    */
     return (
         <Box alignItems='flex-start' justifyContent='flex-start'>
             <AboutBanner />

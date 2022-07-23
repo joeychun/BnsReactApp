@@ -2,6 +2,17 @@ import React, { useState } from 'react';
 import './thumbnailWrapper.css';
 
 const ThumbnailWrapper = ({ thumbnail, description }) => {
+    /*
+    ThumbnailWrapper returns JSX of a thumbnail that reveals its
+    description when hovered upon.
+    ________________________________________
+
+    'thumbnail' is JSX––namely, a YoutubeThumbnail component exported from 
+    YoutubeEmbed/thumbnail, which is an appropriately formatted thumbnail <img>. 
+
+    'description', a string, is the description of the thumbnail/video, which 
+    is revealed when the thumbnail is hovered upon.
+    */
     const [isShown, setIsShown] = useState(false);
     return (
         <div className="ThumbnailWrapper"

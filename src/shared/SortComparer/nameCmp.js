@@ -6,6 +6,10 @@ const NameSeperator = (name) => {
 }
 
 const NameSorter = (name1, name2) => {
+    /*
+    NameSorter is a comparing function used for alphabetical sorting of names, 
+    where the last name alphabetical order is prioritized.
+    */
     const [nameObj1, nameObj2] = [NameSeperator(name1), NameSeperator(name2)];
 
     const lastsCmp = nameObj1.last.localeCompare(nameObj2.last);

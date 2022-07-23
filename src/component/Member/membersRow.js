@@ -5,9 +5,13 @@ import MemberContainer from './memberContainer';
 
 
 const MembersRow = ({ infoList }) => {
-    // This is how infoList will be formatted:
-    /* Example:
-    
+    /*
+    MembersRow receieves a list of members' information and converts/returns that to
+    appropriately styled JSX of a row of member cards.
+    ________________________________________
+
+    'infoList' is a list of objects that contain information for each member.
+    For example,
     [
         {
             name: "Junseo Lee",

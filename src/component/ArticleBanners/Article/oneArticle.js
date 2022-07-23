@@ -7,6 +7,16 @@ import { Row } from 'antd';
 import './oneArticle.css';
 
 const OneArticle = ({ id }) => {
+    /* 
+    OneArticle gets information (located in src/content) about an article, then
+    converts and returns that information as appropriate JSX that has all 
+    components from one article, such as its title, text, author, and date.
+    ________________________________________
+
+    'id', derived from the params of articles/:id, refers to the unique id
+    of the article dealt in this function/component.
+    */
+
     const { title, authorId, filename, date } = Searcher("article", id);
 
     const authorStr = AuthorsSection(authorId);
@@ -15,7 +25,7 @@ const OneArticle = ({ id }) => {
     const text = Reader({ article: null })[parsedFilename].text;
 
     // As 'text' is derived from a JSON file, there are no newlines.
-    // The process below adds in newlines by inserting <br>
+    // The process below seperates paragraphs, which each take a margin (in css).
     const textArray = text.split(/\n/).filter(t => t);
     const textParagraphs = textArray.map((paragraph, ind) => {
         return (

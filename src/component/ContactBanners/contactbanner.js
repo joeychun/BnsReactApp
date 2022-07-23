@@ -4,6 +4,10 @@ import { Button, Icon } from 'semantic-ui-react'
 import './contactbanner.css';
 
 const ElementBody = () => {
+    /* 
+    ElementBody returns JSX of a blue, animated button that displays "Email Us!"
+    when it is not hovered and a mail icon when it is hovered.
+    */
     return (
         <Button animated="vertical" color="blue" className="ContactButton"
             onClick={() => window.open("mailto:seongyoon.kim24@stu.siskorea.org")}
@@ -29,6 +33,9 @@ const cssSettings = {
 }
 
 const ContactBanner = () => {
+    /*
+    ContactBanner returns JSX of the banner for the contact page.
+    */
     return (
         <div>
             <Banner bannerId="" noDivider={true} bgColor={cssSettings.bgColor} heading={content.heading} elementBody={<ElementBody />}

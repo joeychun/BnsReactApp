@@ -16,6 +16,9 @@ const cssSettings = {
 }
 
 const AboutBanner = () => {
+    /*
+    AboutBanner returns JSX of the banner for the about section of the home page.
+    */
     return (
         <div>
             <Banner bannerId="" noDivider={false} bgColor={cssSettings.bgColor} heading={content.heading} textBodies={content.textBodies}
