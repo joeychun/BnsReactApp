@@ -1,16 +1,9 @@
 [
     {
         "id": 1,
-        "title": "Rick Roll",
-        "authorId": [7, 9],
-        "filename": "test1.json",
-        "date": "April 5, 2022"
-    },
-    {
-        "id": 2,
-        "title": "Joey vs Pzzang",
-        "authorId": 25,
-        "filename": "test2.json",
-        "date": "July 20, 2022"
+        "title": "Psychology of Gambling",
+        "authorId": [6, 8],
+        "filename": "psychology_of_gambling.json",
+        "date": "March 19, 2022"
     }
 ]
