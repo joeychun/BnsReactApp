@@ -6,6 +6,7 @@
     width: 500px;
     height: 275px;
     border-radius: 15px 15px 15px 15px;
+    border: 1.5px solid black;
     object-fit: cover;
 }
 
