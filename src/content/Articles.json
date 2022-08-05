@@ -61,5 +61,12 @@
         "authorId": 24,
         "filename": "stress_an_everyday_obstacle.json",
         "date": "August 5, 2022"
+    },
+    {
+        "id": 10,
+        "title": "Moral or Not?",
+        "authorId": 20,
+        "filename": "moral_or_not.json",
+        "date": "August 5, 2022"
     }
 ]
