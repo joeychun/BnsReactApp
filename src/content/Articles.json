@@ -26,5 +26,40 @@
         "authorId": 25,
         "filename": "diamonds_the_product_of_physiological_advertisement.json",
         "date": "April 2, 2022"
+    },
+    {
+        "id": 5,
+        "title": "What Determines a Character",
+        "authorId": 27,
+        "filename": "what_determines_a_character.json",
+        "date": "August 5, 2022"
+    },
+    {
+        "id": 6,
+        "title": "Psychological Reasoning behind the Existence of Religions",
+        "authorId": 25,
+        "filename": "psychological_reasoning_behind_the_existence_of_religions.json",
+        "date": "August 5, 2022"
+    },
+    {
+        "id": 7,
+        "title": "Right or Left",
+        "authorId": 23,
+        "filename": "right_or_left.json",
+        "date": "August 5, 2022"
+    },
+    {
+        "id": 8,
+        "title": "Why People Have Different Moralities",
+        "authorId": 19,
+        "filename": "why_people_have_different_moralities.json",
+        "date": "August 5, 2022"
+    },
+    {
+        "id": 9,
+        "title": "Stress: An Everyday Obstacle",
+        "authorId": 24,
+        "filename": "stress_an_everyday_obstacle.json",
+        "date": "August 5, 2022"
     }
 ]
