@@ -55,7 +55,20 @@ const DateSorter_ = (date1, date2) => {
     return info.first.year > info.second.year;
 }
 
-const DateSorter = (date1, date2) => {
+const DateSorter = (_date1, _date2) => {
+    let date1, date2;
+    if (typeof _date1 === "string") { // Normal Date String
+        date1 = _date1;
+    } else { // This would be {id: date} format
+        date1 = Object.values(_date1)[0];
+    }
+
+    if (typeof _date2 === "string") { // Normal Date String
+        date2 = _date2;
+    } else { // This would be {id: date} format
+        date2 = Object.values(_date2)[0];
+    }
+
     return DateSorter_(date1, date2) ? -1 : 1;
 }
 
