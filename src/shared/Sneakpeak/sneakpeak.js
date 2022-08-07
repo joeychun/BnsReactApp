@@ -3,7 +3,7 @@ import React from 'react';
 
 import './styles.css';
 
-const SneakPeak = ({ title, content, date, sourceId, type, linkFunc, hrefcontent }) => {
+const SneakPeak = ({ title, content, date, sourceId, type, linkFunc, hrefcontent, isBorderless }) => {
     /*
     SneakPeak returns a sneakpeak component that mainly composes 
     of a title, content, and date.
@@ -25,10 +25,12 @@ const SneakPeak = ({ title, content, date, sourceId, type, linkFunc, hrefcontent
 
     'hrefcontent' is a boolean or boolean-returning function about whether the content 
     should, along with the title, be a hyperlink. Default is false.
+
+    'isBorderless' is a boolean on whehter the sneakpeak should have a bottom border.
     */
     const sourceLink = linkFunc(sourceId, type);
     return (
-        <div className="Sneakpeak">
+        <div id={`${type} ${sourceId}`} className={isBorderless ? "Sneakpeak" : "Sneakpeak Border"} >
             <Row style={{ height: "100%" }} gutter={18}>
                 <Col style={{ width: "15%", borderRight: "1.5px solid #CDD1D4", paddingRight: 0, marginRight: 40 }} span={4}>
                     <p className="Date">{date}</p>

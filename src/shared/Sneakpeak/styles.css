@@ -1,6 +1,9 @@
 .Sneakpeak {
     margin-bottom: 40px;
     padding-bottom: 40px;
+}
+
+.Border {
     border-bottom: 1px solid #CDD1D4;
 }
 

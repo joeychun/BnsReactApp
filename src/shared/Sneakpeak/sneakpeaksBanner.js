@@ -2,6 +2,17 @@ import React from 'react';
 import SneakPeak from './sneakpeak';
 import DateSorter from '../SortComparer/dateCmp';
 
+const DateMin = (dateList) => {
+    let min = "Far Away, 9999";
+    for (let ind = 0; ind < dateList.length; ind++) {
+        const element = dateList[ind];
+        if (DateSorter(element, min) === 1) {
+            min = element;
+        }
+    }
+    return min;
+}
+
 const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, linkFunc, includeMargin, hrefcontent }) => {
     /* 
     SneakpeaksBanner receives content information from 'contentJsons', then
@@ -37,6 +48,15 @@ const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, linkFunc, inclu
         hrefContent = () => true;
     }
 
+    // Not clean code, but can obtain the id of the oldest-dated content
+    let oldestDateId = Object.keys(
+        DateMin(
+            contentJsons.map(({ id, date }) => {
+                return { [id.toString()]: date };
+            })
+        )
+    )[0];
+
     const allSneaks = contentJsons.map(({ type, id, title, authorId, filename, date }) => {
         const parsedFilename = filename.replace('.txt', '').replace('.json', ''); // In case file format is added
         const content = contentFunc(allFiles[parsedFilename]);
@@ -44,7 +64,7 @@ const SneakpeaksBanner = ({ contentJsons, allFiles, contentFunc, linkFunc, inclu
         return <SneakPeak key={id} sourceId={id} title={title} authorId={authorId}
             content={content} date={date} type={type}
             linkFunc={(contentId, type) => linkFunc(contentId, type)}
-            hrefcontent={doHref} />;
+            hrefcontent={doHref} isBorderless={id === parseInt(oldestDateId)} />;
     })
 
     const sortedAllSneaks = allSneaks.sort((a, b) => {
